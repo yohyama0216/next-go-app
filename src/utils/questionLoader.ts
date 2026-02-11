@@ -8,6 +8,9 @@ import rentalPropertyManagerQuestions from '@/data/rental-property-manager.json'
 import condominiumManagerQuestions from '@/data/condominium-manager.json';
 import webDesign3Questions from '@/data/web-design-3.json';
 import goQuestions from '@/data/go.json';
+import pythonQuestions from '@/data/python.json';
+import pythonDataAnalysisQuestions from '@/data/python-data-analysis.json';
+import statisticsGrade2Questions from '@/data/statistics-grade2.json';
 
 // Map of exam types to their questions
 const questionsMap: Record<ExamType, Question[]> = {
@@ -18,6 +21,9 @@ const questionsMap: Record<ExamType, Question[]> = {
   'condominium-manager': condominiumManagerQuestions as Question[],
   'web-design-3': webDesign3Questions as Question[],
   'go': goQuestions as Question[],
+  'python': pythonQuestions as Question[],
+  'python-data-analysis': pythonDataAnalysisQuestions as Question[],
+  'statistics-grade2': statisticsGrade2Questions as Question[],
 };
 
 /**
