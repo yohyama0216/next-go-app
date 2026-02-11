@@ -1,0 +1,377 @@
+[
+  {
+    "id": 6001,
+    "examType": "python",
+    "category": "データ型",
+    "question": "次のコードの出力はどれか。\n\nx = [1, 2, 3]\ny = x\ny.append(4)\nprint(len(x))\n",
+    "choices": [
+      "3",
+      "4",
+      "エラー",
+      "None"
+    ],
+    "correctAnswer": 1,
+    "explanation": "リストは参照型なので、y と x は同じオブジェクトを参照します。y.append(4) により x も変更されます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 6002,
+    "examType": "python",
+    "category": "データ型",
+    "question": "次のコードの出力はどれか。\n\nx = (1, 2)\nx[0] = 10\nprint(x)\n",
+    "choices": [
+      "(10, 2)",
+      "(1, 2)",
+      "エラー",
+      "[10, 2]"
+    ],
+    "correctAnswer": 2,
+    "explanation": "タプルは不変なので、要素の変更はできません。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 6003,
+    "examType": "python",
+    "category": "データ型",
+    "question": "次のコードの出力はどれか。\n\nx = {1, 2, 2, 3}\nprint(len(x))\n",
+    "choices": [
+      "3",
+      "4",
+      "2",
+      "エラー"
+    ],
+    "correctAnswer": 0,
+    "explanation": "set は重複を許さないため、{1, 2, 3} となり長さは 3 です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 6004,
+    "examType": "python",
+    "category": "文字列操作",
+    "question": "次のコードの出力はどれか。\n\ns = \"Python\"\nprint(s[1:4])\n",
+    "choices": [
+      "Pyt",
+      "yth",
+      "ytho",
+      "Pyth"
+    ],
+    "correctAnswer": 1,
+    "explanation": "スライス s[1:4] は開始インデックス 1 から 4 の手前まで取得します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 6005,
+    "examType": "python",
+    "category": "文字列操作",
+    "question": "次のコードの出力はどれか。\n\ns = \"hello\"\nprint(s.upper())\nprint(s)\n",
+    "choices": [
+      "HELLO\\nhello",
+      "HELLO\\nHELLO",
+      "hello\\nhello",
+      "エラー"
+    ],
+    "correctAnswer": 0,
+    "explanation": "文字列は不変なので、upper() は新しい文字列を返し、元の s は変わりません。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 6006,
+    "examType": "python",
+    "category": "リスト操作",
+    "question": "次のコードの出力はどれか。\n\nx = [1, 2, 3]\ny = x[:]\ny.append(4)\nprint(len(x))\n",
+    "choices": [
+      "3",
+      "4",
+      "0",
+      "エラー"
+    ],
+    "correctAnswer": 0,
+    "explanation": "x[:] はリストのコピーを作成するため、y への変更は x に影響しません。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 6007,
+    "examType": "python",
+    "category": "リスト操作",
+    "question": "次のコードの出力はどれか。\n\nx = [1, 2, 3, 4]\nprint(x[-2])\n",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "負のインデックスは末尾から数えます。-2 は後ろから 2 番目の要素です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 6008,
+    "examType": "python",
+    "category": "辞書操作",
+    "question": "次のコードの出力はどれか。\n\nd = {'a': 1, 'b': 2}\nprint(d.get('c', 0))\n",
+    "choices": [
+      "None",
+      "0",
+      "エラー",
+      "c"
+    ],
+    "correctAnswer": 1,
+    "explanation": "get() メソッドは第2引数にデフォルト値を指定でき、キーが存在しない場合にそれを返します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 6009,
+    "examType": "python",
+    "category": "辞書操作",
+    "question": "次のコードの出力はどれか。\n\nd = {'a': 1, 'b': 2}\nfor k in d:\n    print(k, end='')\n",
+    "choices": [
+      "ab",
+      "12",
+      "a1b2",
+      "エラー"
+    ],
+    "correctAnswer": 0,
+    "explanation": "辞書をループするとキーが取得されます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 6010,
+    "examType": "python",
+    "category": "制御構文",
+    "question": "次のコードの出力はどれか。\n\nfor i in range(3):\n    if i == 1:\n        continue\n    print(i, end='')\n",
+    "choices": [
+      "012",
+      "02",
+      "12",
+      "0"
+    ],
+    "correctAnswer": 1,
+    "explanation": "continue はループの次の反復にスキップします。i==1 のときは print されません。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 6011,
+    "examType": "python",
+    "category": "制御構文",
+    "question": "次のコードの出力はどれか。\n\nfor i in range(3):\n    if i == 1:\n        break\nelse:\n    print('A')\nprint('B')\n",
+    "choices": [
+      "AB",
+      "B",
+      "A",
+      "何も出力されない"
+    ],
+    "correctAnswer": 1,
+    "explanation": "for-else の else は break で抜けた場合は実行されません。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 6012,
+    "examType": "python",
+    "category": "関数",
+    "question": "次のコードの出力はどれか。\n\ndef f(x=[]):\n    x.append(1)\n    return x\n\nprint(len(f()))\nprint(len(f()))\n",
+    "choices": [
+      "1\\n1",
+      "1\\n2",
+      "2\\n1",
+      "エラー"
+    ],
+    "correctAnswer": 1,
+    "explanation": "デフォルト引数のリストは関数定義時に一度だけ作成され、呼び出しごとに共有されます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 6013,
+    "examType": "python",
+    "category": "関数",
+    "question": "次のコードの出力はどれか。\n\ndef f(a, b=2, c=3):\n    return a + b + c\n\nprint(f(1, c=4))\n",
+    "choices": [
+      "6",
+      "7",
+      "8",
+      "エラー"
+    ],
+    "correctAnswer": 1,
+    "explanation": "キーワード引数を使うと、デフォルト引数をスキップして指定できます。a=1, b=2, c=4 です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 6014,
+    "examType": "python",
+    "category": "内包表記",
+    "question": "次のコードの出力はどれか。\n\nx = [i*2 for i in range(3)]\nprint(x)\n",
+    "choices": [
+      "[0, 2, 4]",
+      "[0, 1, 2]",
+      "[2, 4, 6]",
+      "[1, 2, 3]"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リスト内包表記で 0, 1, 2 それぞれを 2 倍した [0, 2, 4] が作られます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 6015,
+    "examType": "python",
+    "category": "内包表記",
+    "question": "次のコードの出力はどれか。\n\nx = {i: i**2 for i in range(3)}\nprint(x[2])\n",
+    "choices": [
+      "2",
+      "4",
+      "8",
+      "エラー"
+    ],
+    "correctAnswer": 1,
+    "explanation": "辞書内包表記で {0: 0, 1: 1, 2: 4} が作られます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 6016,
+    "examType": "python",
+    "category": "例外処理",
+    "question": "次のコードの出力はどれか。\n\ntry:\n    x = 1 / 0\nexcept ZeroDivisionError:\n    print('A')\nexcept:\n    print('B')\nelse:\n    print('C')\nfinally:\n    print('D')\n",
+    "choices": [
+      "AD",
+      "BD",
+      "CD",
+      "D"
+    ],
+    "correctAnswer": 0,
+    "explanation": "ZeroDivisionError が発生し A が出力され、finally は必ず実行されます。else は例外がない場合のみ実行されます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 6017,
+    "examType": "python",
+    "category": "例外処理",
+    "question": "次のコードの出力はどれか。\n\ntry:\n    x = 10\nexcept:\n    print('A')\nelse:\n    print('B')\nfinally:\n    print('C')\n",
+    "choices": [
+      "AC",
+      "BC",
+      "ABC",
+      "C"
+    ],
+    "correctAnswer": 1,
+    "explanation": "例外が発生しないため else が実行され、finally も必ず実行されます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 6018,
+    "examType": "python",
+    "category": "クラス",
+    "question": "次のコードの出力はどれか。\n\nclass A:\n    x = 1\n\na = A()\nb = A()\nA.x = 2\nprint(a.x, b.x)\n",
+    "choices": [
+      "1 1",
+      "2 2",
+      "1 2",
+      "2 1"
+    ],
+    "correctAnswer": 1,
+    "explanation": "クラス変数は全インスタンスで共有されます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 6019,
+    "examType": "python",
+    "category": "クラス",
+    "question": "次のコードの出力はどれか。\n\nclass A:\n    def __init__(self):\n        self.x = 1\n\na = A()\nb = A()\na.x = 2\nprint(a.x, b.x)\n",
+    "choices": [
+      "1 1",
+      "2 2",
+      "2 1",
+      "1 2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "インスタンス変数は各インスタンスごとに独立しています。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 6020,
+    "examType": "python",
+    "category": "ラムダ式",
+    "question": "次のコードの出力はどれか。\n\nf = lambda x: x * 2\nprint(f(3))\n",
+    "choices": [
+      "3",
+      "6",
+      "9",
+      "エラー"
+    ],
+    "correctAnswer": 1,
+    "explanation": "ラムダ式は無名関数を作成します。f(3) は 3*2=6 を返します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 6021,
+    "examType": "python",
+    "category": "ラムダ式",
+    "question": "次のコードの出力はどれか。\n\nx = [1, 2, 3]\ny = list(map(lambda n: n**2, x))\nprint(y)\n",
+    "choices": [
+      "[1, 2, 3]",
+      "[1, 4, 9]",
+      "[2, 4, 6]",
+      "エラー"
+    ],
+    "correctAnswer": 1,
+    "explanation": "map() は各要素にラムダ式を適用します。1²=1, 2²=4, 3²=9 です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 6022,
+    "examType": "python",
+    "category": "スコープ",
+    "question": "次のコードの出力はどれか。\n\nx = 1\ndef f():\n    x = 2\n    print(x)\n\nf()\nprint(x)\n",
+    "choices": [
+      "1\\n1",
+      "2\\n2",
+      "2\\n1",
+      "1\\n2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "関数内の x はローカル変数で、グローバル変数とは別です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 6023,
+    "examType": "python",
+    "category": "スコープ",
+    "question": "次のコードの出力はどれか。\n\nx = 1\ndef f():\n    global x\n    x = 2\n\nf()\nprint(x)\n",
+    "choices": [
+      "1",
+      "2",
+      "エラー",
+      "None"
+    ],
+    "correctAnswer": 1,
+    "explanation": "global キーワードでグローバル変数を変更できます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 6024,
+    "examType": "python",
+    "category": "イテレータ",
+    "question": "次のコードの出力はどれか。\n\nx = iter([1, 2, 3])\nprint(next(x))\nprint(next(x))\n",
+    "choices": [
+      "1\\n1",
+      "1\\n2",
+      "2\\n3",
+      "エラー"
+    ],
+    "correctAnswer": 1,
+    "explanation": "next() は イテレータの次の要素を返します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 6025,
+    "examType": "python",
+    "category": "イテレータ",
+    "question": "次のコードの出力はどれか。\n\nx = enumerate(['a', 'b', 'c'])\nprint(list(x))\n",
+    "choices": [
+      "['a', 'b', 'c']",
+      "[(0, 'a'), (1, 'b'), (2, 'c')]",
+      "[0, 1, 2]",
+      "エラー"
+    ],
+    "correctAnswer": 1,
+    "explanation": "enumerate() はインデックスと値のタプルを返すイテレータを作成します。",
+    "difficulty": "basic"
+  }
+]

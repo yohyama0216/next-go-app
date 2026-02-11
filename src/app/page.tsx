@@ -19,7 +19,11 @@ export default function Home() {
     },
     {
       name: 'プログラミングコース',
-      exams: ['go']
+      exams: ['go', 'python']
+    },
+    {
+      name: '統計・データサイエンスコース',
+      exams: ['statistics-grade2', 'python-data-analysis']
     }
   ];
 

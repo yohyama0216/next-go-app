@@ -1,0 +1,377 @@
+[
+  {
+    "id": 7001,
+    "examType": "python-data-analysis",
+    "category": "Pandas基礎",
+    "question": "次のコードの出力はどれか。\n\nimport pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]})\nprint(type(df['A']))\n",
+    "choices": [
+      "<class 'pandas.core.frame.DataFrame'>",
+      "<class 'pandas.core.series.Series'>",
+      "<class 'list'>",
+      "<class 'numpy.ndarray'>"
+    ],
+    "correctAnswer": 1,
+    "explanation": "DataFrame から列を取り出すと Series オブジェクトになります。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 7002,
+    "examType": "python-data-analysis",
+    "category": "Pandas基礎",
+    "question": "次のコードの出力はどれか。\n\nimport pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\nprint(df.shape)\n",
+    "choices": [
+      "(2, 3)",
+      "(3, 2)",
+      "(6,)",
+      "(2,)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "shape は (行数, 列数) のタプルを返します。3行2列なので (3, 2) です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 7003,
+    "examType": "python-data-analysis",
+    "category": "Pandas基礎",
+    "question": "次のコードの出力はどれか。\n\nimport pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]})\nprint(len(df))\n",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "len(df) は DataFrame の行数を返します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 7004,
+    "examType": "python-data-analysis",
+    "category": "Pandasインデックス",
+    "question": "次のコードの出力はどれか。\n\nimport pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]}, index=['x', 'y', 'z'])\nprint(df.loc['y', 'A'])\n",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "エラー"
+    ],
+    "correctAnswer": 1,
+    "explanation": "loc はラベルベースのアクセスです。インデックス 'y'、列 'A' の値は 2 です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 7005,
+    "examType": "python-data-analysis",
+    "category": "Pandasインデックス",
+    "question": "次のコードの出力はどれか。\n\nimport pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]}, index=['x', 'y', 'z'])\nprint(df.iloc[1, 0])\n",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "エラー"
+    ],
+    "correctAnswer": 1,
+    "explanation": "iloc は位置ベースのアクセスです。1行目、0列目の値は 2 です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 7006,
+    "examType": "python-data-analysis",
+    "category": "Pandas欠損値",
+    "question": "次のコードの出力はどれか。\n\nimport pandas as pd\nimport numpy as np\ndf = pd.DataFrame({'A': [1, np.nan, 3]})\nprint(df['A'].isna().sum())\n",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "isna() は欠損値に True を返し、sum() で True の数（=1）を数えます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 7007,
+    "examType": "python-data-analysis",
+    "category": "Pandas欠損値",
+    "question": "次のコードの出力はどれか。\n\nimport pandas as pd\nimport numpy as np\ndf = pd.DataFrame({'A': [1, np.nan, 3]})\nprint(len(df.dropna()))\n",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "dropna() は欠損値を含む行を削除します。結果は2行になります。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 7008,
+    "examType": "python-data-analysis",
+    "category": "Pandas集計",
+    "question": "次のコードの出力はどれか。\n\nimport pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3]})\nprint(df['A'].sum())\n",
+    "choices": [
+      "3",
+      "6",
+      "2",
+      "1"
+    ],
+    "correctAnswer": 1,
+    "explanation": "sum() は列の合計を返します。1+2+3=6 です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 7009,
+    "examType": "python-data-analysis",
+    "category": "Pandas集計",
+    "question": "次のコードの出力はどれか。\n\nimport pandas as pd\ndf = pd.DataFrame({'A': ['x', 'y', 'x', 'y']})\nprint(len(df.groupby('A')))\n",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "groupby('A') は 'x' と 'y' の2つのグループを作ります。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 7010,
+    "examType": "python-data-analysis",
+    "category": "NumPy配列",
+    "question": "次のコードの出力はどれか。\n\nimport numpy as np\narr = np.array([1, 2, 3])\nprint(arr.shape)\n",
+    "choices": [
+      "(1, 3)",
+      "(3, 1)",
+      "(3,)",
+      "3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "1次元配列の shape は (要素数,) の形式です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 7011,
+    "examType": "python-data-analysis",
+    "category": "NumPy配列",
+    "question": "次のコードの出力はどれか。\n\nimport numpy as np\narr = np.array([[1, 2], [3, 4]])\nprint(arr.shape)\n",
+    "choices": [
+      "(2, 2)",
+      "(4,)",
+      "(2,)",
+      "(1, 4)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "2次元配列の shape は (行数, 列数) です。2×2 なので (2, 2) です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 7012,
+    "examType": "python-data-analysis",
+    "category": "NumPy演算",
+    "question": "次のコードの出力はどれか。\n\nimport numpy as np\narr = np.array([1, 2, 3])\nprint((arr * 2).tolist())\n",
+    "choices": [
+      "[1, 2, 3, 1, 2, 3]",
+      "[2, 4, 6]",
+      "[3, 4, 5]",
+      "エラー"
+    ],
+    "correctAnswer": 1,
+    "explanation": "NumPy の配列演算はブロードキャストされ、各要素が2倍になります。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 7013,
+    "examType": "python-data-analysis",
+    "category": "NumPy演算",
+    "question": "次のコードの出力はどれか。\n\nimport numpy as np\narr1 = np.array([1, 2])\narr2 = np.array([3, 4])\nprint((arr1 + arr2).tolist())\n",
+    "choices": [
+      "[1, 2, 3, 4]",
+      "[4, 6]",
+      "[3, 6]",
+      "エラー"
+    ],
+    "correctAnswer": 1,
+    "explanation": "要素ごとの加算が行われます。[1+3, 2+4] = [4, 6] です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 7014,
+    "examType": "python-data-analysis",
+    "category": "NumPy統計",
+    "question": "次のコードの出力はどれか。\n\nimport numpy as np\narr = np.array([1, 2, 3, 4, 5])\nprint(np.mean(arr))\n",
+    "choices": [
+      "2.5",
+      "3.0",
+      "15.0",
+      "5.0"
+    ],
+    "correctAnswer": 1,
+    "explanation": "mean() は平均を返します。(1+2+3+4+5)/5 = 3.0 です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 7015,
+    "examType": "python-data-analysis",
+    "category": "NumPy統計",
+    "question": "次のコードの出力はどれか。\n\nimport numpy as np\narr = np.array([1, 2, 3, 4, 5])\nprint(np.median(arr))\n",
+    "choices": [
+      "2.0",
+      "3.0",
+      "2.5",
+      "4.0"
+    ],
+    "correctAnswer": 1,
+    "explanation": "median() は中央値を返します。5つの要素の中央は 3.0 です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 7016,
+    "examType": "python-data-analysis",
+    "category": "データ前処理",
+    "question": "次のコードで正規化後の最大値はどれか。\n\nimport pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3, 4, 5]})\ndf['A_norm'] = (df['A'] - df['A'].min()) / (df['A'].max() - df['A'].min())\nprint(df['A_norm'].max())\n",
+    "choices": [
+      "0.0",
+      "0.5",
+      "1.0",
+      "5.0"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Min-Max正規化により、最大値は 1.0、最小値は 0.0 になります。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 7017,
+    "examType": "python-data-analysis",
+    "category": "データ前処理",
+    "question": "次のコードの出力はどれか。\n\nimport pandas as pd\ndf = pd.DataFrame({'A': ['a', 'b', 'a', 'c']})\nprint(df['A'].nunique())\n",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "1"
+    ],
+    "correctAnswer": 1,
+    "explanation": "nunique() はユニークな値の個数を返します。'a', 'b', 'c' の3つです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 7018,
+    "examType": "python-data-analysis",
+    "category": "データ結合",
+    "question": "次のコードの出力はどれか。\n\nimport pandas as pd\ndf1 = pd.DataFrame({'A': [1, 2]})\ndf2 = pd.DataFrame({'A': [3, 4]})\ndf = pd.concat([df1, df2])\nprint(len(df))\n",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "エラー"
+    ],
+    "correctAnswer": 2,
+    "explanation": "concat() は DataFrame を縦に結合します。2+2=4行になります。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 7019,
+    "examType": "python-data-analysis",
+    "category": "データ結合",
+    "question": "次のコードの出力はどれか。\n\nimport pandas as pd\ndf1 = pd.DataFrame({'key': ['a', 'b'], 'val1': [1, 2]})\ndf2 = pd.DataFrame({'key': ['a', 'c'], 'val2': [3, 4]})\ndf = pd.merge(df1, df2, on='key', how='inner')\nprint(len(df))\n",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "inner join は両方に存在するキー（'a'）のみを返します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 7020,
+    "examType": "python-data-analysis",
+    "category": "可視化",
+    "question": "matplotlibで折れ線グラフを描画する関数はどれか。",
+    "choices": [
+      "plt.bar()",
+      "plt.plot()",
+      "plt.scatter()",
+      "plt.hist()"
+    ],
+    "correctAnswer": 1,
+    "explanation": "plt.plot() は折れ線グラフを描画します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 7021,
+    "examType": "python-data-analysis",
+    "category": "可視化",
+    "question": "matplotlibで棒グラフを描画する関数はどれか。",
+    "choices": [
+      "plt.bar()",
+      "plt.plot()",
+      "plt.scatter()",
+      "plt.pie()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "plt.bar() は棒グラフを描画します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 7022,
+    "examType": "python-data-analysis",
+    "category": "時系列データ",
+    "question": "次のコードの出力はどれか。\n\nimport pandas as pd\ndates = pd.date_range('2024-01-01', periods=3, freq='D')\nprint(len(dates))\n",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "date_range() で periods=3 を指定すると3つの日付が生成されます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 7023,
+    "examType": "python-data-analysis",
+    "category": "時系列データ",
+    "question": "次のコードの出力はどれか。\n\nimport pandas as pd\ndf = pd.DataFrame({'date': ['2024-01-01', '2024-01-02']})\ndf['date'] = pd.to_datetime(df['date'])\nprint(type(df['date'].iloc[0]))\n",
+    "choices": [
+      "<class 'str'>",
+      "<class 'pandas._libs.tslibs.timestamps.Timestamp'>",
+      "<class 'datetime.datetime'>",
+      "<class 'int'>"
+    ],
+    "correctAnswer": 1,
+    "explanation": "pd.to_datetime() は文字列を Timestamp オブジェクトに変換します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 7024,
+    "examType": "python-data-analysis",
+    "category": "カテゴリカルデータ",
+    "question": "次のコードで one-hot encoding 後の列数はどれか。\n\nimport pandas as pd\ndf = pd.DataFrame({'A': ['x', 'y', 'z']})\ndf_encoded = pd.get_dummies(df, columns=['A'])\nprint(df_encoded.shape[1])\n",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "get_dummies() は 'x', 'y', 'z' の3つのカテゴリをそれぞれ列に変換します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 7025,
+    "examType": "python-data-analysis",
+    "category": "カテゴリカルデータ",
+    "question": "次のコードの出力はどれか。\n\nimport pandas as pd\ndf = pd.DataFrame({'A': ['Low', 'High', 'Medium']})\ndf['A'] = df['A'].astype('category')\nprint(type(df['A'].dtype))\n",
+    "choices": [
+      "<class 'pandas.core.dtypes.dtypes.CategoricalDtype'>",
+      "<class 'str'>",
+      "<class 'object'>",
+      "<class 'category'>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "astype('category') で CategoricalDtype に変換されます。",
+    "difficulty": "exam"
+  }
+]

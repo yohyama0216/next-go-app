@@ -8,7 +8,10 @@ export function generateStaticParams() {
     { examType: 'rental-property-manager' },
     { examType: 'condominium-manager' },
     { examType: 'web-design-3' },
-    { examType: 'go' }
+    { examType: 'go' },
+    { examType: 'python' },
+    { examType: 'python-data-analysis' },
+    { examType: 'statistics-grade2' }
   ];
 }
 

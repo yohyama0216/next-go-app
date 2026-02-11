@@ -161,6 +161,9 @@ export default function StatsPage() {
       case 'rental-property-manager': return '賃貸不動産経営管理士';
       case 'condominium-manager': return 'マンション管理士';
       case 'go': return 'Go文法';
+      case 'python': return 'Python3認定試験';
+      case 'python-data-analysis': return 'Pythonデータ分析';
+      case 'statistics-grade2': return '統計検定2級';
       default: return '';
     }
   };
