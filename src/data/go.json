@@ -1,0 +1,227 @@
+[
+  {
+    "id": 5001,
+    "examType": "go",
+    "category": "宣言と初期化",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    var x int\n    fmt.Println(x)\n}\n",
+    "choices": [
+      "nil",
+      "0",
+      "\"\"",
+      "コンパイルエラー"
+    ],
+    "correctAnswer": 1,
+    "explanation": "int のゼロ値は 0 です。var x int は 0 に初期化されます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 5002,
+    "examType": "go",
+    "category": "宣言と初期化",
+    "question": "次のコードのコンパイル結果はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    x := 1\n    x := 2\n    fmt.Println(x)\n}\n",
+    "choices": [
+      "2 が出力される",
+      "1 が出力される",
+      "実行時パニックになる",
+      "コンパイルエラー"
+    ],
+    "correctAnswer": 3,
+    "explanation": "同一スコープで短縮宣言 (:=) により同名変数を再宣言できません。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 5003,
+    "examType": "go",
+    "category": "スコープ",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    x := 1\n    {\n        x := 2\n        fmt.Print(x)\n    }\n    fmt.Print(x)\n}\n",
+    "choices": [
+      "11",
+      "22",
+      "12",
+      "21"
+    ],
+    "correctAnswer": 3,
+    "explanation": "内側のブロックで新しい x が宣言されます。内側は 2、外側は 1 です。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 5011,
+    "examType": "go",
+    "category": "PHPからの移行",
+    "question": "PHPのように未使用変数を許すつもりで書いた次のコードの結果はどれか。\n\npackage main\n\nfunc main() {\n    x := 1\n}\n",
+    "choices": [
+      "何も出力されず正常終了",
+      "実行時パニック",
+      "コンパイルエラー",
+      "x が暗黙に削除される"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Go は未使用変数をコンパイルエラーにします。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 5012,
+    "examType": "go",
+    "category": "PHPからの移行",
+    "question": "PHPのように文字列連結に + を使った次のコードの結果はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    s := \"Go\" + \"Lang\"\n    fmt.Println(s)\n}\n",
+    "choices": [
+      "GoLang",
+      "Go Lang",
+      "0",
+      "コンパイルエラー"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Go の文字列連結は + を使います。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 5013,
+    "examType": "go",
+    "category": "PHPからの移行",
+    "question": "PHPのように未定義値を nil で扱おうとして書いた次のコードの結果はどれか。\n\npackage main\n\nfunc main() {\n    var x int = nil\n}\n",
+    "choices": [
+      "コンパイルエラー",
+      "x は 0 になる",
+      "実行時パニック",
+      "x は nil のまま"
+    ],
+    "correctAnswer": 0,
+    "explanation": "nil はポインタやスライス等の参照型にしか使えません。int には代入できません。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 5014,
+    "examType": "go",
+    "category": "PHPからの移行",
+    "question": "PHPのように配列の途中要素を省略しようとして書いた次のコードの結果はどれか。\n\npackage main\n\nfunc main() {\n    s := []int{1,,3}\n    _ = s\n}\n",
+    "choices": [
+      "コンパイルエラー",
+      "[1 0 3] になる",
+      "[1 3] になる",
+      "実行時パニック"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Go のリテラルでは要素の省略はできません。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 5015,
+    "examType": "go",
+    "category": "PHPからの移行",
+    "question": "PHPのように関数引数を値渡しで気にせず使った次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc inc(x int) {\n    x++
+  },
+  {
+    "id": 5004,
+    "examType": "go",
+    "category": "for文",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    sum := 0\n    for i := 0; i < 3; i++ {\n        sum += i\n    }\n    fmt.Println(sum)\n}\n",
+    "choices": [
+      "3",
+    "choices": [
+      "2",
+      "1",
+      "0",
+      "コンパイルエラー"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Go は値渡しなので、inc 内の変更は呼び出し元に影響しません。",
+    "difficulty": "basic"
+      "6",
+      "1",
+      "0"
+    ],
+    "correctAnswer": 0,
+    "explanation": "0+1+2=3 です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 5005,
+    "examType": "go",
+    "category": "switch文",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    x := 1\n    switch x {\n    case 1:\n        fmt.Print(\"A\")\n        fallthrough\n    case 2:\n        fmt.Print(\"B\")\n    default:\n        fmt.Print(\"C\")\n    }\n}\n",
+    "choices": [
+      "A",
+      "B",
+      "AB",
+      "AC"
+    ],
+    "correctAnswer": 2,
+    "explanation": "fallthrough により次の case が実行されるため、AB が出力されます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 5006,
+    "examType": "go",
+    "category": "range",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    s := []int{10, 20, 30}\n    for i, v := range s {\n        if i == 1 {\n            fmt.Print(v)\n        }\n    }\n}\n",
+    "choices": [
+      "10",
+      "20",
+      "30",
+      "1"
+    ],
+    "correctAnswer": 1,
+    "explanation": "i==1 のとき v は 20 です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 5007,
+    "examType": "go",
+    "category": "map",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    m := map[string]int{\"a\": 1}\n    v, ok := m[\"b\"]\n    fmt.Println(v, ok)\n}\n",
+    "choices": [
+      "1 true",
+      "0 false",
+      "0 true",
+      "nil false"
+    ],
+    "correctAnswer": 1,
+    "explanation": "存在しないキーはゼロ値と false が返ります。int のゼロ値は 0 です。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 5008,
+    "examType": "go",
+    "category": "defer",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    defer fmt.Print(\"A\")\n    defer fmt.Print(\"B\")\n    fmt.Print(\"C\")\n}\n",
+    "choices": [
+      "ABC",
+      "CBA",
+      "CAB",
+      "BAC"
+    ],
+    "correctAnswer": 1,
+    "explanation": "defer は LIFO で実行されるため、C の後に B、A が出力されます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 5009,
+    "examType": "go",
+    "category": "interface",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    var p *int = nil\n    var i interface{} = p\n    fmt.Println(i == nil)\n}\n",
+    "choices": [
+      "true",
+      "false",
+      "コンパイルエラー",
+      "実行時パニック"
+    ],
+    "correctAnswer": 1,
+    "explanation": "interface{} には型情報が入るため、値が nil でも interface 自体は nil ではありません。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 5010,
+    "examType": "go",
+    "category": "型アサーション",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    var i interface{} = \"go\"\n    s, ok := i.(string)\n    fmt.Println(s, ok)\n}\n",
+    "choices": [
+      "go true",
+      "go false",
+      """" false",
+      "コンパイルエラー"
+    ],
+    "correctAnswer": 0,
+    "explanation": "型アサーションが成功すると値と true が返ります。",
+    "difficulty": "basic"
+  }
+]

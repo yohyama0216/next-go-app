@@ -30,12 +30,17 @@ export const EXAM_INFO: Record<ExamType, { title: string; description: string; s
     title: 'Webデザイン技能検定3級対策クイズ',
     description: 'Webデザイン技能検定3級試験の学習用アプリです。',
     shortName: 'Webデザイン技能検定3級'
+  },
+  'go': {
+    title: 'Go文法クイズ',
+    description: 'Go言語の文法を4択で学べるクイズです。',
+    shortName: 'Go文法'
   }
 };
 
 export function getExamTypeFromSlug(slug: string): ExamType | null {
   // Since slug and examType are the same, just validate
-  if (slug === 'takken' || slug === 'land-surveyor' || slug === 'real-estate-appraiser' || slug === 'rental-property-manager' || slug === 'condominium-manager' || slug === 'web-design-3') {
+  if (slug === 'takken' || slug === 'land-surveyor' || slug === 'real-estate-appraiser' || slug === 'rental-property-manager' || slug === 'condominium-manager' || slug === 'web-design-3' || slug === 'go') {
     return slug as ExamType;
   }
   return null;

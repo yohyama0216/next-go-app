@@ -16,6 +16,10 @@ export default function Home() {
         'rental-property-manager',
         'condominium-manager'
       ]
+    },
+    {
+      name: 'プログラミングコース',
+      exams: ['go']
     }
   ];
 
