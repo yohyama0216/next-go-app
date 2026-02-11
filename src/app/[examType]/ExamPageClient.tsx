@@ -7,6 +7,7 @@ import { Question } from '@/types/quiz';
 import { getExamTypeFromSlug, EXAM_INFO } from '@/utils/examMapping';
 import { saveLastExamType } from '@/utils/storageDB';
 import { getQuestionsByExamType } from '@/utils/questionLoader';
+import { withBase } from '@/utils/links';
 
 export default function ExamPageClient() {
   const params = useParams();
@@ -26,7 +27,7 @@ export default function ExamPageClient() {
         <div className="alert alert-danger">
           <h4>エラー</h4>
           <p>指定された試験が見つかりません。</p>
-          <Link href="/" className="btn btn-primary">
+          <Link href={withBase('/')} className="btn btn-primary">
             ホームに戻る
           </Link>
         </div>
@@ -58,7 +59,7 @@ export default function ExamPageClient() {
     <main>
       <div className="row mb-4">
         <div className="col-12">
-          <Link href="/" className="btn btn-outline-secondary mb-3">
+          <Link href={withBase('/')} className="btn btn-outline-secondary mb-3">
             ← 試験選択に戻る
           </Link>
         </div>
@@ -85,7 +86,7 @@ export default function ExamPageClient() {
                   <div className="card-body">
                     <h5 className="card-title">{cat.name}</h5>
                     <p className="mb-2"><strong>{cat.count}問</strong></p>
-                    <Link href={`/${examSlug}/quiz?difficulty=all&category=${encodeURIComponent(cat.name)}`} className="btn btn-outline-secondary w-100">
+                    <Link href={withBase(`/${examSlug}/quiz?difficulty=all&category=${encodeURIComponent(cat.name)}`)} className="btn btn-outline-secondary w-100">
                       このカテゴリで学習
                     </Link>
                   </div>
@@ -110,7 +111,7 @@ export default function ExamPageClient() {
                     </h5>
                     <p className="card-text">基本用語の定義を確認</p>
                     <p className="mb-2"><strong>{terminologyQuestions}問</strong></p>
-                    <Link href={`/${examSlug}/quiz?difficulty=terminology&category=all`} className="btn btn-info w-100">
+                    <Link href={withBase(`/${examSlug}/quiz?difficulty=terminology&category=all`)} className="btn btn-info w-100">
                       学習を開始
                     </Link>
                   </div>
@@ -126,7 +127,7 @@ export default function ExamPageClient() {
                   </h5>
                   <p className="card-text">初心者向けの基本問題</p>
                   <p className="mb-2"><strong>{basicQuestions}問</strong></p>
-                  <Link href={`/${examSlug}/quiz?difficulty=basic&category=all`} className="btn btn-success w-100">
+                  <Link href={withBase(`/${examSlug}/quiz?difficulty=basic&category=all`)} className="btn btn-success w-100">
                     学習を開始
                   </Link>
                 </div>
@@ -142,7 +143,7 @@ export default function ExamPageClient() {
                     </h5>
                     <p className="card-text">似た用語・概念の違いを理解する問題</p>
                     <p className="mb-2"><strong>{comparisonQuestions}問</strong></p>
-                    <Link href={`/${examSlug}/quiz?difficulty=comparison&category=all`} className="btn btn-warning w-100">
+                    <Link href={withBase(`/${examSlug}/quiz?difficulty=comparison&category=all`)} className="btn btn-warning w-100">
                       学習を開始
                     </Link>
                   </div>
@@ -158,7 +159,7 @@ export default function ExamPageClient() {
                   </h5>
                   <p className="card-text">実際の試験に近い難易度の問題</p>
                   <p className="mb-2"><strong>{examQuestions}問</strong></p>
-                  <Link href={`/${examSlug}/quiz?difficulty=exam&category=all`} className="btn btn-primary w-100">
+                  <Link href={withBase(`/${examSlug}/quiz?difficulty=exam&category=all`)} className="btn btn-primary w-100">
                     学習を開始
                   </Link>
                 </div>
@@ -170,12 +171,12 @@ export default function ExamPageClient() {
 
       <div className="row mt-4">
         <div className="col-md-6 mb-3">
-          <Link href={`/${examSlug}/stats`} className="btn btn-info btn-lg w-100">
+          <Link href={withBase(`/${examSlug}/stats`)} className="btn btn-info btn-lg w-100">
             統計を表示
           </Link>
         </div>
         <div className="col-md-6 mb-3">
-          <Link href="/history" className="btn btn-secondary btn-lg w-100">
+          <Link href={withBase('/history')} className="btn btn-secondary btn-lg w-100">
             学習履歴を表示
           </Link>
         </div>

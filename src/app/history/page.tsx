@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { withBase } from '@/utils/links';
 import { DailyActivity } from '@/types/quiz';
 import { getDailyActivityHistory } from '@/utils/storageDB';
 
@@ -162,12 +163,12 @@ export default function HistoryPage() {
       {/* Action Buttons */}
       <div className="row mb-4">
         <div className="col-md-6 mb-3">
-          <Link href="/" className="btn btn-primary btn-lg w-100">
+          <Link href={withBase('/')} className="btn btn-primary btn-lg w-100">
             ホームに戻る
           </Link>
         </div>
         <div className="col-md-6 mb-3">
-          <Link href="/stats" className="btn btn-info btn-lg w-100">
+          <Link href={withBase('/stats')} className="btn btn-info btn-lg w-100">
             統計を表示
           </Link>
         </div>

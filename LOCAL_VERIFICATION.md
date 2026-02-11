@@ -23,8 +23,8 @@ Node.js 18.x 以上がインストールされていることを確認してく�
 ### 1. リポジトリのクローン
 
 ```bash
-git clone https://github.com/yohyama0216/shikaku-taisaku-app.git
-cd shikaku-taisaku-app
+git clone https://github.com/yohyama0216/next-go-app.git
+cd next-go-app
 ```
 
 ### 2. 依存関係のインストール

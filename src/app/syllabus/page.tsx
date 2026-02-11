@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { withBase } from '@/utils/links';
 
 export default function SyllabusPage() {
   return (
@@ -262,7 +263,7 @@ export default function SyllabusPage() {
       </section>
 
       <div className="mt-4">
-        <Link href="/" className="btn btn-primary">← トップページに戻る</Link>
+        <Link href={withBase('/')} className="btn btn-primary">← トップページに戻る</Link>
       </div>
     </main>
   );

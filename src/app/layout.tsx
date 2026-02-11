@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.css';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { withBase } from '@/utils/links';
 
 export const metadata: Metadata = {
   title: '資格試験対策クイズ',
@@ -21,11 +22,11 @@ export default function RootLayout({
       <body>
         <nav className="navbar navbar-dark bg-primary mb-4">
           <div className="container">
-            <Link href="/" className="navbar-brand mb-0 h1 text-white text-decoration-none">
+            <Link href={withBase('/')} className="navbar-brand mb-0 h1 text-white text-decoration-none">
               資格試験対策クイズ
             </Link>
             <div className="navbar-nav">
-              <Link href="/syllabus" className="nav-link text-white">
+              <Link href={withBase('/syllabus')} className="nav-link text-white">
                 試験範囲
               </Link>
             </div>

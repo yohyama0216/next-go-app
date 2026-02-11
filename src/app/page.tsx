@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { EXAM_INFO, getSlugFromExamType } from '@/utils/examMapping';
 import { ExamType } from '@/types/quiz';
+import { withBase } from '@/utils/links';
 
 export default function Home() {
   const examTypes: ExamType[] = [
@@ -33,7 +34,7 @@ export default function Home() {
           return (
             <div key={examType} className="col-md-6 col-lg-4 mb-4">
               <Link 
-                href={`/${slug}`} 
+                href={withBase(`/${slug}`)} 
                 className="card h-100 border-primary text-decoration-none exam-card"
               >
                 <div className="card-body d-flex flex-column">

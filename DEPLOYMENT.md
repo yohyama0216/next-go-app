@@ -18,7 +18,7 @@
 
 1. リポジトリの設定ページにアクセス:
    ```
-   https://github.com/yohyama0216/shikaku-taisaku-app/settings/pages
+   https://github.com/yohyama0216/next-go-app/settings/pages
    ```
 
 2. **"Build and deployment"** セクションで：
@@ -39,7 +39,7 @@
 
 デプロイが成功すると、数分後に以下の URL でアクセスできます：
 ```
-https://yohyama0216.github.io/shikaku-taisaku-app/
+https://yohyama0216.github.io/next-go-app/
 ```
 
 ## トラブルシューティング
