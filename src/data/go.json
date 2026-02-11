@@ -45,87 +45,12 @@
     "difficulty": "exam"
   },
   {
-    "id": 5011,
-    "examType": "go",
-    "category": "PHPからの移行",
-    "question": "PHPのように未使用変数を許すつもりで書いた次のコードの結果はどれか。\n\npackage main\n\nfunc main() {\n    x := 1\n}\n",
-    "choices": [
-      "何も出力されず正常終了",
-      "実行時パニック",
-      "コンパイルエラー",
-      "x が暗黙に削除される"
-    ],
-    "correctAnswer": 2,
-    "explanation": "Go は未使用変数をコンパイルエラーにします。",
-    "difficulty": "basic"
-  },
-  {
-    "id": 5012,
-    "examType": "go",
-    "category": "PHPからの移行",
-    "question": "PHPのように文字列連結に + を使った次のコードの結果はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    s := \"Go\" + \"Lang\"\n    fmt.Println(s)\n}\n",
-    "choices": [
-      "GoLang",
-      "Go Lang",
-      "0",
-      "コンパイルエラー"
-    ],
-    "correctAnswer": 0,
-    "explanation": "Go の文字列連結は + を使います。",
-    "difficulty": "basic"
-  },
-  {
-    "id": 5013,
-    "examType": "go",
-    "category": "PHPからの移行",
-    "question": "PHPのように未定義値を nil で扱おうとして書いた次のコードの結果はどれか。\n\npackage main\n\nfunc main() {\n    var x int = nil\n}\n",
-    "choices": [
-      "コンパイルエラー",
-      "x は 0 になる",
-      "実行時パニック",
-      "x は nil のまま"
-    ],
-    "correctAnswer": 0,
-    "explanation": "nil はポインタやスライス等の参照型にしか使えません。int には代入できません。",
-    "difficulty": "exam"
-  },
-  {
-    "id": 5014,
-    "examType": "go",
-    "category": "PHPからの移行",
-    "question": "PHPのように配列の途中要素を省略しようとして書いた次のコードの結果はどれか。\n\npackage main\n\nfunc main() {\n    s := []int{1,,3}\n    _ = s\n}\n",
-    "choices": [
-      "コンパイルエラー",
-      "[1 0 3] になる",
-      "[1 3] になる",
-      "実行時パニック"
-    ],
-    "correctAnswer": 0,
-    "explanation": "Go のリテラルでは要素の省略はできません。",
-    "difficulty": "exam"
-  },
-  {
-    "id": 5015,
-    "examType": "go",
-    "category": "PHPからの移行",
-    "question": "PHPのように関数引数を値渡しで気にせず使った次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc inc(x int) {\n    x++
-  },
-  {
     "id": 5004,
     "examType": "go",
     "category": "for文",
     "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    sum := 0\n    for i := 0; i < 3; i++ {\n        sum += i\n    }\n    fmt.Println(sum)\n}\n",
     "choices": [
       "3",
-    "choices": [
-      "2",
-      "1",
-      "0",
-      "コンパイルエラー"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Go は値渡しなので、inc 内の変更は呼び出し元に影響しません。",
-    "difficulty": "basic"
       "6",
       "1",
       "0"
@@ -217,11 +142,86 @@
     "choices": [
       "go true",
       "go false",
-      """" false",
+      "\"\" false",
       "コンパイルエラー"
     ],
     "correctAnswer": 0,
     "explanation": "型アサーションが成功すると値と true が返ります。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 5011,
+    "examType": "go",
+    "category": "PHPからの移行",
+    "question": "PHPのように未使用変数を許すつもりで書いた次のコードの結果はどれか。\n\npackage main\n\nfunc main() {\n    x := 1\n}\n",
+    "choices": [
+      "何も出力されず正常終了",
+      "実行時パニック",
+      "コンパイルエラー",
+      "x が暗黙に削除される"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Go は未使用変数をコンパイルエラーにします。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 5012,
+    "examType": "go",
+    "category": "PHPからの移行",
+    "question": "PHPのように文字列連結に + を使った次のコードの結果はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    s := \"Go\" + \"Lang\"\n    fmt.Println(s)\n}\n",
+    "choices": [
+      "GoLang",
+      "Go Lang",
+      "0",
+      "コンパイルエラー"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Go の文字列連結は + を使います。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 5013,
+    "examType": "go",
+    "category": "PHPからの移行",
+    "question": "PHPのように未定義値を nil で扱おうとして書いた次のコードの結果はどれか。\n\npackage main\n\nfunc main() {\n    var x int = nil\n}\n",
+    "choices": [
+      "コンパイルエラー",
+      "x は 0 になる",
+      "実行時パニック",
+      "x は nil のまま"
+    ],
+    "correctAnswer": 0,
+    "explanation": "nil はポインタやスライス等の参照型にしか使えません。int には代入できません。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 5014,
+    "examType": "go",
+    "category": "PHPからの移行",
+    "question": "PHPのように配列の途中要素を省略しようとして書いた次のコードの結果はどれか。\n\npackage main\n\nfunc main() {\n    s := []int{1,,3}\n    _ = s\n}\n",
+    "choices": [
+      "コンパイルエラー",
+      "[1 0 3] になる",
+      "[1 3] になる",
+      "実行時パニック"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Go のリテラルでは要素の省略はできません。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 5015,
+    "examType": "go",
+    "category": "PHPからの移行",
+    "question": "PHPのように関数引数を値渡しで気にせず使った次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc inc(x int) {\n    x++\n}\n\nfunc main() {\n    v := 1\n    inc(v)\n    fmt.Println(v)\n}\n",
+    "choices": [
+      "2",
+      "1",
+      "0",
+      "コンパイルエラー"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Go は値渡しなので、inc 内の変更は呼び出し元に影響しません。",
     "difficulty": "basic"
   }
 ]
