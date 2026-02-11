@@ -11,7 +11,9 @@ export function generateStaticParams() {
     { examType: 'go' },
     { examType: 'python' },
     { examType: 'python-data-analysis' },
-    { examType: 'statistics-grade2' }
+    { examType: 'statistics-grade2' },
+    { examType: 'rest-api' },
+    { examType: 'ccna' }
   ];
 }
 

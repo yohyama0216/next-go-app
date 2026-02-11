@@ -1,0 +1,377 @@
+[
+  {
+    "id": 10001,
+    "examType": "ccna",
+    "category": "OSI参照モデル",
+    "question": "OSI参照モデルの第3層（ネットワーク層）で動作するプロトコルはどれか。",
+    "choices": [
+      "TCP",
+      "IP",
+      "Ethernet",
+      "HTTP"
+    ],
+    "correctAnswer": 1,
+    "explanation": "IPはネットワーク層（第3層）で動作します。TCPは第4層、Ethernetは第2層、HTTPは第7層です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 10002,
+    "examType": "ccna",
+    "category": "OSI参照モデル",
+    "question": "OSI参照モデルの第2層（データリンク層）の機能はどれか。",
+    "choices": [
+      "ルーティング",
+      "MACアドレスによる通信",
+      "アプリケーション間通信",
+      "ビット列の伝送"
+    ],
+    "correctAnswer": 1,
+    "explanation": "データリンク層ではMACアドレスを使用した通信とフレームの送受信を行います。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 10003,
+    "examType": "ccna",
+    "category": "TCP/IP",
+    "question": "TCPの特徴として正しいものはどれか。",
+    "choices": [
+      "コネクションレス型",
+      "信頼性のある通信",
+      "ブロードキャスト通信",
+      "高速だが信頼性が低い"
+    ],
+    "correctAnswer": 1,
+    "explanation": "TCPはコネクション型で信頼性のある通信を提供します。再送制御やフロー制御を行います。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 10004,
+    "examType": "ccna",
+    "category": "TCP/IP",
+    "question": "UDPの特徴として正しいものはどれか。",
+    "choices": [
+      "再送制御を行う",
+      "フロー制御を行う",
+      "コネクションレス型",
+      "必ず順序保証される"
+    ],
+    "correctAnswer": 2,
+    "explanation": "UDPはコネクションレス型で、再送制御やフロー制御は行いません。軽量で高速ですが信頼性は低いです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 10005,
+    "examType": "ccna",
+    "category": "IPアドレッシング",
+    "question": "クラスCのデフォルトサブネットマスクはどれか。",
+    "choices": [
+      "255.0.0.0",
+      "255.255.0.0",
+      "255.255.255.0",
+      "255.255.255.255"
+    ],
+    "correctAnswer": 2,
+    "explanation": "クラスCのデフォルトサブネットマスクは255.255.255.0（/24）です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 10006,
+    "examType": "ccna",
+    "category": "IPアドレッシング",
+    "question": "プライベートIPアドレスの範囲として正しいものはどれか。",
+    "choices": [
+      "10.0.0.0 - 10.255.255.255",
+      "172.16.0.0 - 172.31.255.255",
+      "192.168.0.0 - 192.168.255.255",
+      "すべて正しい"
+    ],
+    "correctAnswer": 3,
+    "explanation": "プライベートIPアドレスは、10.0.0.0/8、172.16.0.0/12、192.168.0.0/16の3つの範囲があります。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 10007,
+    "examType": "ccna",
+    "category": "サブネット",
+    "question": "192.168.1.0/26 のネットワークで使用可能なホストアドレスの数はどれか。",
+    "choices": [
+      "30",
+      "62",
+      "126",
+      "254"
+    ],
+    "correctAnswer": 1,
+    "explanation": "/26は2^6=64個のアドレスがあり、ネットワークアドレスとブロードキャストアドレスを除くと62個のホストアドレスが使用可能です。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 10008,
+    "examType": "ccna",
+    "category": "サブネット",
+    "question": "IPアドレス 192.168.10.45/28 のネットワークアドレスはどれか。",
+    "choices": [
+      "192.168.10.0",
+      "192.168.10.32",
+      "192.168.10.40",
+      "192.168.10.48"
+    ],
+    "correctAnswer": 1,
+    "explanation": "/28は240のサブネットマスクで、16個ずつのブロックになります。45は32-47の範囲なので、ネットワークアドレスは192.168.10.32です。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 10009,
+    "examType": "ccna",
+    "category": "ルーティング",
+    "question": "スタティックルーティングの特徴として正しいものはどれか。",
+    "choices": [
+      "自動的に経路を学習する",
+      "ネットワークの変更に自動対応",
+      "管理者が手動で経路を設定",
+      "常に最適経路を選択"
+    ],
+    "correctAnswer": 2,
+    "explanation": "スタティックルーティングは管理者が手動で経路を設定します。設定は固定的で自動更新されません。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 10010,
+    "examType": "ccna",
+    "category": "ルーティング",
+    "question": "ダイナミックルーティングプロトコルの利点はどれか。",
+    "choices": [
+      "設定が簡単",
+      "帯域を消費しない",
+      "ネットワーク変更に自動対応",
+      "CPUリソースを使わない"
+    ],
+    "correctAnswer": 2,
+    "explanation": "ダイナミックルーティングはネットワーク構成の変更に自動的に対応できます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 10011,
+    "examType": "ccna",
+    "category": "VLAN",
+    "question": "VLANの主な目的はどれか。",
+    "choices": [
+      "物理的なネットワークを論理的に分割",
+      "通信速度の向上",
+      "ケーブルコストの削減",
+      "IPアドレスの節約"
+    ],
+    "correctAnswer": 0,
+    "explanation": "VLANは物理的なネットワークを論理的に分割し、ブロードキャストドメインを分離します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 10012,
+    "examType": "ccna",
+    "category": "VLAN",
+    "question": "トランクポートの役割はどれか。",
+    "choices": [
+      "1つのVLANのみを通す",
+      "複数のVLANのトラフィックを通す",
+      "管理トラフィックのみを通す",
+      "インターネット接続専用"
+    ],
+    "correctAnswer": 1,
+    "explanation": "トランクポートは複数のVLANのトラフィックを通すことができます。通常802.1Qタグを使用します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 10013,
+    "examType": "ccna",
+    "category": "スイッチング",
+    "question": "スイッチがMACアドレステーブルにないアドレス宛のフレームを受信した場合の動作はどれか。",
+    "choices": [
+      "破棄する",
+      "全ポートにフラッディング",
+      "送信元に返す",
+      "ルーターに転送"
+    ],
+    "correctAnswer": 1,
+    "explanation": "宛先MACアドレスが未知の場合、スイッチは受信ポート以外の全ポートにフレームをフラッディングします。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 10014,
+    "examType": "ccna",
+    "category": "STP",
+    "question": "STP（スパニングツリープロトコル）の主な目的はどれか。",
+    "choices": [
+      "通信速度の向上",
+      "ループの防止",
+      "セキュリティの強化",
+      "負荷分散"
+    ],
+    "correctAnswer": 1,
+    "explanation": "STPはレイヤ2ネットワークでのループを防止するためのプロトコルです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 10015,
+    "examType": "ccna",
+    "category": "STP",
+    "question": "STPのポート状態でトラフィックを転送するのはどれか。",
+    "choices": [
+      "Blocking",
+      "Listening",
+      "Learning",
+      "Forwarding"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Forwarding状態のポートのみがトラフィックを転送します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 10016,
+    "examType": "ccna",
+    "category": "ルーティングプロトコル",
+    "question": "OSPF（Open Shortest Path First）はどのタイプのルーティングプロトコルか。",
+    "choices": [
+      "ディスタンスベクター",
+      "リンクステート",
+      "ハイブリッド",
+      "パスベクター"
+    ],
+    "correctAnswer": 1,
+    "explanation": "OSPFはリンクステート型のルーティングプロトコルです。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 10017,
+    "examType": "ccna",
+    "category": "ルーティングプロトコル",
+    "question": "RIPv1とRIPv2の違いとして正しいものはどれか。",
+    "choices": [
+      "RIPv2はクラスレスルーティングをサポート",
+      "RIPv1の方が高速",
+      "RIPv2は最大ホップ数が多い",
+      "RIPv1はVLSMをサポート"
+    ],
+    "correctAnswer": 0,
+    "explanation": "RIPv2はクラスレスルーティング（CIDR/VLSM）をサポートしており、サブネットマスク情報を含みます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 10018,
+    "examType": "ccna",
+    "category": "NAT",
+    "question": "NAT（Network Address Translation）の主な目的はどれか。",
+    "choices": [
+      "通信速度の向上",
+      "プライベートIPとグローバルIPの変換",
+      "暗号化通信",
+      "負荷分散"
+    ],
+    "correctAnswer": 1,
+    "explanation": "NATはプライベートIPアドレスとグローバルIPアドレスを相互変換する技術です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 10019,
+    "examType": "ccna",
+    "category": "NAT",
+    "question": "PAT（Port Address Translation）の別名はどれか。",
+    "choices": [
+      "スタティックNAT",
+      "ダイナミックNAT",
+      "NATオーバーロード",
+      "リバースNAT"
+    ],
+    "correctAnswer": 2,
+    "explanation": "PATは1つのグローバルIPアドレスを複数のプライベートIPアドレスで共有する方式で、NATオーバーロードとも呼ばれます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 10020,
+    "examType": "ccna",
+    "category": "ACL",
+    "question": "標準ACL（Access Control List）で制御できる条件はどれか。",
+    "choices": [
+      "送信元IPアドレスのみ",
+      "宛先IPアドレスのみ",
+      "ポート番号",
+      "プロトコルタイプ"
+    ],
+    "correctAnswer": 0,
+    "explanation": "標準ACLは送信元IPアドレスのみで制御します。拡張ACLでは送信元・宛先IP、ポート番号、プロトコルなどを制御できます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 10021,
+    "examType": "ccna",
+    "category": "ACL",
+    "question": "ACLを適用する方向として正しいものはどれか。",
+    "choices": [
+      "Inboundのみ",
+      "Outboundのみ",
+      "InboundまたはOutbound",
+      "双方向のみ"
+    ],
+    "correctAnswer": 2,
+    "explanation": "ACLはインターフェースのInbound（受信）方向またはOutbound（送信）方向に適用できます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 10022,
+    "examType": "ccna",
+    "category": "WAN",
+    "question": "PPP（Point-to-Point Protocol）の認証方式はどれか。",
+    "choices": [
+      "PAP, CHAP",
+      "MD5, SHA",
+      "SSL, TLS",
+      "RSA, AES"
+    ],
+    "correctAnswer": 0,
+    "explanation": "PPPの認証方式にはPAP（Password Authentication Protocol）とCHAP（Challenge Handshake Authentication Protocol）があります。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 10023,
+    "examType": "ccna",
+    "category": "デフォルトゲートウェイ",
+    "question": "デフォルトゲートウェイの役割はどれか。",
+    "choices": [
+      "DNS名前解決",
+      "DHCPアドレス割り当て",
+      "異なるネットワークへのパケット転送",
+      "ファイアウォール機能"
+    ],
+    "correctAnswer": 2,
+    "explanation": "デフォルトゲートウェイは、ローカルネットワーク外への通信を行う際の出口となるルーターのIPアドレスです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 10024,
+    "examType": "ccna",
+    "category": "DHCP",
+    "question": "DHCPサーバーがクライアントに割り当てる情報はどれか。",
+    "choices": [
+      "IPアドレスのみ",
+      "IPアドレスとサブネットマスク",
+      "IPアドレス、サブネットマスク、デフォルトゲートウェイ、DNS",
+      "MACアドレス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "DHCPはIPアドレス、サブネットマスク、デフォルトゲートウェイ、DNSサーバーなどのネットワーク設定情報を自動的に割り当てます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 10025,
+    "examType": "ccna",
+    "category": "トラブルシューティング",
+    "question": "pingコマンドで確認できることはどれか。",
+    "choices": [
+      "帯域幅の速度",
+      "ネットワークの到達性",
+      "ルーティングテーブル",
+      "ポート番号"
+    ],
+    "correctAnswer": 1,
+    "explanation": "pingコマンドはICMPエコー要求/応答を使用して、ネットワークの到達性（疎通確認）を確認します。",
+    "difficulty": "basic"
+  }
+]

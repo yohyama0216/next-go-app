@@ -19,11 +19,15 @@ export default function Home() {
     },
     {
       name: 'プログラミングコース',
-      exams: ['go', 'python']
+      exams: ['go', 'rest-api']
     },
     {
       name: '統計・データサイエンスコース',
-      exams: ['statistics-grade2', 'python-data-analysis']
+      exams: ['statistics-grade2', 'python', 'python-data-analysis']
+    },
+    {
+      name: 'ネットワークコース',
+      exams: ['ccna']
     }
   ];
 

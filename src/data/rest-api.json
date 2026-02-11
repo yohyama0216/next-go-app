@@ -1,0 +1,377 @@
+[
+  {
+    "id": 9001,
+    "examType": "rest-api",
+    "category": "REST基本原則",
+    "question": "RESTの6つの制約の中で、サーバーがクライアントの状態を保持しない原則を何というか。",
+    "choices": [
+      "キャッシュ可能性",
+      "ステートレス",
+      "統一インターフェース",
+      "階層化システム"
+    ],
+    "correctAnswer": 1,
+    "explanation": "ステートレス（Stateless）は、サーバーがクライアントのセッション状態を保持せず、各リクエストが完結している原則です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 9002,
+    "examType": "rest-api",
+    "category": "REST基本原則",
+    "question": "RESTアーキテクチャにおいて、リソースを一意に識別するものは何か。",
+    "choices": [
+      "HTTP メソッド",
+      "URI",
+      "ステータスコード",
+      "リクエストボディ"
+    ],
+    "correctAnswer": 1,
+    "explanation": "URI（Uniform Resource Identifier）がリソースを一意に識別します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 9003,
+    "examType": "rest-api",
+    "category": "HTTPメソッド",
+    "question": "リソースの取得に使用するHTTPメソッドはどれか。",
+    "choices": [
+      "POST",
+      "GET",
+      "PUT",
+      "DELETE"
+    ],
+    "correctAnswer": 1,
+    "explanation": "GETメソッドはリソースの取得に使用します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 9004,
+    "examType": "rest-api",
+    "category": "HTTPメソッド",
+    "question": "新しいリソースの作成に最も適したHTTPメソッドはどれか。",
+    "choices": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH"
+    ],
+    "correctAnswer": 1,
+    "explanation": "POSTは新しいリソースの作成に使用します。PUTは更新や置換に使用します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 9005,
+    "examType": "rest-api",
+    "category": "HTTPメソッド",
+    "question": "リソースの完全な置換に使用するHTTPメソッドはどれか。",
+    "choices": [
+      "POST",
+      "GET",
+      "PUT",
+      "PATCH"
+    ],
+    "correctAnswer": 2,
+    "explanation": "PUTはリソース全体の置換に使用します。部分更新にはPATCHを使用します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 9006,
+    "examType": "rest-api",
+    "category": "HTTPメソッド",
+    "question": "リソースの部分的な更新に使用するHTTPメソッドはどれか。",
+    "choices": [
+      "POST",
+      "PUT",
+      "PATCH",
+      "UPDATE"
+    ],
+    "correctAnswer": 2,
+    "explanation": "PATCHはリソースの部分的な更新に使用します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 9007,
+    "examType": "rest-api",
+    "category": "HTTPメソッド",
+    "question": "べき等性を持つHTTPメソッドの組み合わせとして正しいものはどれか。",
+    "choices": [
+      "GET, POST, PUT, DELETE",
+      "GET, PUT, DELETE",
+      "POST, PUT, PATCH",
+      "GET, POST"
+    ],
+    "correctAnswer": 1,
+    "explanation": "GET, PUT, DELETEはべき等性を持ちます（同じリクエストを複数回実行しても結果が同じ）。POSTはべき等ではありません。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 9008,
+    "examType": "rest-api",
+    "category": "ステータスコード",
+    "question": "リソースの作成に成功した場合に返すべきステータスコードはどれか。",
+    "choices": [
+      "200 OK",
+      "201 Created",
+      "204 No Content",
+      "202 Accepted"
+    ],
+    "correctAnswer": 1,
+    "explanation": "201 Createdは新しいリソースが正常に作成されたことを示します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 9009,
+    "examType": "rest-api",
+    "category": "ステータスコード",
+    "question": "リクエストされたリソースが見つからない場合のステータスコードはどれか。",
+    "choices": [
+      "400 Bad Request",
+      "401 Unauthorized",
+      "404 Not Found",
+      "500 Internal Server Error"
+    ],
+    "correctAnswer": 2,
+    "explanation": "404 Not Foundはリクエストされたリソースが存在しないことを示します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 9010,
+    "examType": "rest-api",
+    "category": "ステータスコード",
+    "question": "認証が必要だが認証情報が提供されていない場合のステータスコードはどれか。",
+    "choices": [
+      "400 Bad Request",
+      "401 Unauthorized",
+      "403 Forbidden",
+      "404 Not Found"
+    ],
+    "correctAnswer": 1,
+    "explanation": "401 Unauthorizedは認証が必要であることを示します。403は認証済みだが権限がない場合です。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 9011,
+    "examType": "rest-api",
+    "category": "ステータスコード",
+    "question": "削除が成功し、レスポンスボディが空の場合に返すステータスコードはどれか。",
+    "choices": [
+      "200 OK",
+      "201 Created",
+      "204 No Content",
+      "202 Accepted"
+    ],
+    "correctAnswer": 2,
+    "explanation": "204 No Contentは処理が成功したがレスポンスボディがないことを示します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 9012,
+    "examType": "rest-api",
+    "category": "URI設計",
+    "question": "RESTful APIのURI設計において推奨される命名規則はどれか。",
+    "choices": [
+      "動詞を使用する（/getUsers）",
+      "名詞の複数形を使用する（/users）",
+      "キャメルケースを使用する（/UserList）",
+      "アンダースコアを使用する（/user_list）"
+    ],
+    "correctAnswer": 1,
+    "explanation": "RESTではリソースを名詞の複数形で表現し、HTTPメソッドで動作を表現します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 9013,
+    "examType": "rest-api",
+    "category": "URI設計",
+    "question": "特定のユーザー（ID: 123）の情報を取得するURIとして最も適切なものはどれか。",
+    "choices": [
+      "/getUser?id=123",
+      "/users/123",
+      "/user/get/123",
+      "/api/getUserById/123"
+    ],
+    "correctAnswer": 1,
+    "explanation": "/users/123 のようにリソースの階層構造を表現するのが適切です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 9014,
+    "examType": "rest-api",
+    "category": "URI設計",
+    "question": "ユーザー（ID: 123）の投稿一覧を取得するURIとして最も適切なものはどれか。",
+    "choices": [
+      "/users/123/posts",
+      "/posts?userId=123",
+      "/getUserPosts/123",
+      "どれも正しい"
+    ],
+    "correctAnswer": 0,
+    "explanation": "/users/123/posts のように階層構造で表現するのが最も RESTful です。クエリパラメータも可能ですが、階層構造の方が推奨されます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 9015,
+    "examType": "rest-api",
+    "category": "バージョニング",
+    "question": "REST APIのバージョン管理方法として一般的でないものはどれか。",
+    "choices": [
+      "URIにバージョンを含める（/v1/users）",
+      "カスタムヘッダーでバージョン指定",
+      "Accept ヘッダーでバージョン指定",
+      "リクエストボディにバージョン情報を含める"
+    ],
+    "correctAnswer": 3,
+    "explanation": "リクエストボディにバージョン情報を含めるのは一般的ではありません。URI、ヘッダー、Accept ヘッダーが一般的です。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 9016,
+    "examType": "rest-api",
+    "category": "コンテンツネゴシエーション",
+    "question": "クライアントが希望するレスポンス形式を指定するHTTPヘッダーはどれか。",
+    "choices": [
+      "Content-Type",
+      "Accept",
+      "Authorization",
+      "Cache-Control"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Acceptヘッダーでクライアントが受け入れ可能なメディアタイプを指定します。Content-Typeはリクエストボディの形式を示します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 9017,
+    "examType": "rest-api",
+    "category": "ページネーション",
+    "question": "大量のリソース一覧を返す際の設計として適切でないものはどれか。",
+    "choices": [
+      "ページネーションを実装する",
+      "全データを一度に返す",
+      "limit と offset パラメータを使用",
+      "カーソルベースのページネーション"
+    ],
+    "correctAnswer": 1,
+    "explanation": "大量データを一度に返すとパフォーマンスが低下します。ページネーションの実装が必要です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 9018,
+    "examType": "rest-api",
+    "category": "フィルタリング",
+    "question": "リソース一覧のフィルタリングに使用するのはどれか。",
+    "choices": [
+      "パスパラメータ",
+      "クエリパラメータ",
+      "リクエストボディ",
+      "HTTPヘッダー"
+    ],
+    "correctAnswer": 1,
+    "explanation": "フィルタリング、ソート、検索などにはクエリパラメータ（?status=active&sort=name）を使用します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 9019,
+    "examType": "rest-api",
+    "category": "エラーハンドリング",
+    "question": "APIのエラーレスポンスに含めるべき情報として適切でないものはどれか。",
+    "choices": [
+      "エラーメッセージ",
+      "エラーコード",
+      "サーバーの内部実装詳細",
+      "エラーの詳細説明"
+    ],
+    "correctAnswer": 2,
+    "explanation": "セキュリティ上、サーバーの内部実装詳細（スタックトレースなど）は公開すべきではありません。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 9020,
+    "examType": "rest-api",
+    "category": "HATEOAS",
+    "question": "HATEOASの説明として正しいものはどれか。",
+    "choices": [
+      "HTTPヘッダーの暗号化技術",
+      "レスポンスに次の可能なアクションのリンクを含める設計",
+      "APIのバージョン管理手法",
+      "認証トークンの仕様"
+    ],
+    "correctAnswer": 1,
+    "explanation": "HATEOAS（Hypermedia As The Engine Of Application State）は、レスポンスに次に可能なアクションへのリンクを含める設計原則です。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 9021,
+    "examType": "rest-api",
+    "category": "セキュリティ",
+    "question": "REST APIの認証方法として最も一般的なものはどれか。",
+    "choices": [
+      "Basic認証",
+      "OAuth 2.0 / JWT",
+      "Cookie セッション",
+      "IPアドレス制限"
+    ],
+    "correctAnswer": 1,
+    "explanation": "現代のREST APIではOAuth 2.0やJWT（JSON Web Token）を使用した認証が一般的です。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 9022,
+    "examType": "rest-api",
+    "category": "セキュリティ",
+    "question": "APIキーをクライアントに渡す方法として推奨されないものはどれか。",
+    "choices": [
+      "Authorization ヘッダー",
+      "カスタムヘッダー",
+      "URLクエリパラメータ",
+      "リクエストボディ"
+    ],
+    "correctAnswer": 2,
+    "explanation": "URLクエリパラメータは履歴やログに残るため、APIキーなどの機密情報には使用すべきではありません。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 9023,
+    "examType": "rest-api",
+    "category": "キャッシング",
+    "question": "レスポンスのキャッシュ制御を指定するHTTPヘッダーはどれか。",
+    "choices": [
+      "Cache-Control",
+      "Content-Type",
+      "Authorization",
+      "Accept"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cache-Controlヘッダーでキャッシュの動作を制御します（max-age、no-cacheなど）。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 9024,
+    "examType": "rest-api",
+    "category": "レート制限",
+    "question": "APIのレート制限情報をクライアントに伝える方法として適切なものはどれか。",
+    "choices": [
+      "レスポンスボディに含める",
+      "カスタムHTTPヘッダーで返す",
+      "エラーメッセージで伝える",
+      "ドキュメントのみに記載"
+    ],
+    "correctAnswer": 1,
+    "explanation": "X-RateLimit-Limit、X-RateLimit-Remainingなどのカスタムヘッダーでレート制限情報を返すのが一般的です。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 9025,
+    "examType": "rest-api",
+    "category": "ベストプラクティス",
+    "question": "REST APIの設計において推奨される慣習はどれか。",
+    "choices": [
+      "常にPOSTメソッドのみを使用",
+      "HTTPステータスコードを適切に使用",
+      "すべてのレスポンスで200を返す",
+      "エラー時は500を返す"
+    ],
+    "correctAnswer": 1,
+    "explanation": "HTTPステータスコードを適切に使い分けることで、APIの意図が明確になります。",
+    "difficulty": "basic"
+  }
+]

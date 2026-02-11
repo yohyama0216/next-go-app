@@ -11,6 +11,8 @@ import goQuestions from '@/data/go.json';
 import pythonQuestions from '@/data/python.json';
 import pythonDataAnalysisQuestions from '@/data/python-data-analysis.json';
 import statisticsGrade2Questions from '@/data/statistics-grade2.json';
+import restApiQuestions from '@/data/rest-api.json';
+import ccnaQuestions from '@/data/ccna.json';
 
 // Map of exam types to their questions
 const questionsMap: Record<ExamType, Question[]> = {
@@ -24,6 +26,8 @@ const questionsMap: Record<ExamType, Question[]> = {
   'python': pythonQuestions as Question[],
   'python-data-analysis': pythonDataAnalysisQuestions as Question[],
   'statistics-grade2': statisticsGrade2Questions as Question[],
+  'rest-api': restApiQuestions as Question[],
+  'ccna': ccnaQuestions as Question[],
 };
 
 /**

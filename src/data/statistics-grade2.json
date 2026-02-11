@@ -1,0 +1,377 @@
+[
+  {
+    "id": 8001,
+    "examType": "statistics-grade2",
+    "category": "記述統計",
+    "question": "データ {1, 2, 3, 4, 5} の平均値はどれか。",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctAnswer": 1,
+    "explanation": "平均値は (1+2+3+4+5)/5 = 15/5 = 3 です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 8002,
+    "examType": "statistics-grade2",
+    "category": "記述統計",
+    "question": "データ {1, 2, 3, 4, 5} の中央値はどれか。",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "2.5"
+    ],
+    "correctAnswer": 1,
+    "explanation": "データを昇順に並べた時の中央の値が中央値です。5つのデータなので3番目の値3が中央値です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 8003,
+    "examType": "statistics-grade2",
+    "category": "記述統計",
+    "question": "データ {1, 2, 2, 3, 4} の最頻値（モード）はどれか。",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "最頻値は最も頻度が高い値です。2が2回出現しているため、最頻値は2です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 8004,
+    "examType": "statistics-grade2",
+    "category": "記述統計",
+    "question": "データ {2, 4, 6, 8, 10} の分散はどれか。",
+    "choices": [
+      "4",
+      "8",
+      "10",
+      "16"
+    ],
+    "correctAnswer": 1,
+    "explanation": "平均は6、偏差の2乗和は(16+4+0+4+16)=40、分散は40/5=8です。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 8005,
+    "examType": "statistics-grade2",
+    "category": "確率",
+    "question": "サイコロを1回振ったとき、偶数の目が出る確率はどれか。",
+    "choices": [
+      "1/6",
+      "1/3",
+      "1/2",
+      "2/3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "偶数の目は2, 4, 6の3通り。全体は6通りなので、確率は3/6 = 1/2です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 8006,
+    "examType": "statistics-grade2",
+    "category": "確率",
+    "question": "2つの独立な事象AとBの確率がそれぞれP(A)=0.3、P(B)=0.4のとき、AとBが同時に起こる確率P(A∩B)はどれか。",
+    "choices": [
+      "0.12",
+      "0.24",
+      "0.7",
+      "0.06"
+    ],
+    "correctAnswer": 0,
+    "explanation": "独立な事象の同時確率は各確率の積です。0.3 × 0.4 = 0.12です。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 8007,
+    "examType": "statistics-grade2",
+    "category": "確率分布",
+    "question": "二項分布B(n, p)において、試行回数n=10、成功確率p=0.5のとき、期待値はどれか。",
+    "choices": [
+      "2.5",
+      "5",
+      "7.5",
+      "10"
+    ],
+    "correctAnswer": 1,
+    "explanation": "二項分布の期待値は np です。10 × 0.5 = 5 です。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 8008,
+    "examType": "statistics-grade2",
+    "category": "確率分布",
+    "question": "正規分布において、平均から±1標準偏差の範囲にデータが含まれる確率は約何%か。",
+    "choices": [
+      "50%",
+      "68%",
+      "95%",
+      "99%"
+    ],
+    "correctAnswer": 1,
+    "explanation": "正規分布では平均±1標準偏差に約68%、±2標準偏差に約95%、±3標準偏差に約99.7%のデータが含まれます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 8009,
+    "examType": "statistics-grade2",
+    "category": "確率分布",
+    "question": "標準正規分布N(0, 1)の平均と分散はそれぞれどれか。",
+    "choices": [
+      "平均0、分散0",
+      "平均0、分散1",
+      "平均1、分散0",
+      "平均1、分散1"
+    ],
+    "correctAnswer": 1,
+    "explanation": "標準正規分布は平均0、分散1の正規分布です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 8010,
+    "examType": "statistics-grade2",
+    "category": "推定",
+    "question": "母集団から無作為に抽出した標本から母数を推測することを何というか。",
+    "choices": [
+      "検定",
+      "推定",
+      "回帰",
+      "相関"
+    ],
+    "correctAnswer": 1,
+    "explanation": "標本から母集団のパラメータ（母数）を推測することを推定といいます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 8011,
+    "examType": "statistics-grade2",
+    "category": "推定",
+    "question": "信頼区間95%の意味として正しいものはどれか。",
+    "choices": [
+      "母数が真の値である確率が95%",
+      "同じ方法で100回推定したら約95回は真の値を含む区間が得られる",
+      "標本平均が真の値である確率が95%",
+      "誤差が5%以内である"
+    ],
+    "correctAnswer": 1,
+    "explanation": "信頼区間95%とは、同じ方法で繰り返し標本抽出と区間推定を行った場合、約95%の区間が真の母数を含むという意味です。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 8012,
+    "examType": "statistics-grade2",
+    "category": "仮説検定",
+    "question": "帰無仮説とは何か。",
+    "choices": [
+      "証明したい仮説",
+      "否定したい仮説",
+      "正しいことが既知の仮説",
+      "棄却できない仮説"
+    ],
+    "correctAnswer": 1,
+    "explanation": "帰無仮説は「差がない」「効果がない」など、否定したい仮説です。これを棄却することで対立仮説を支持します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 8013,
+    "examType": "statistics-grade2",
+    "category": "仮説検定",
+    "question": "有意水準5%で検定を行うとき、第一種の過誤（αエラー）を犯す確率はどれか。",
+    "choices": [
+      "1%",
+      "5%",
+      "10%",
+      "95%"
+    ],
+    "correctAnswer": 1,
+    "explanation": "有意水準は第一種の過誤（帰無仮説が真なのに棄却してしまう誤り）を犯す確率の上限です。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 8014,
+    "examType": "statistics-grade2",
+    "category": "仮説検定",
+    "question": "p値が0.03のとき、有意水準5%で帰無仮説はどうなるか。",
+    "choices": [
+      "棄却できない",
+      "棄却する",
+      "受容する",
+      "判断できない"
+    ],
+    "correctAnswer": 1,
+    "explanation": "p値が有意水準より小さい場合、帰無仮説を棄却します。0.03 < 0.05 なので棄却します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 8015,
+    "examType": "statistics-grade2",
+    "category": "相関と回帰",
+    "question": "相関係数の取りうる値の範囲はどれか。",
+    "choices": [
+      "0 ≤ r ≤ 1",
+      "-1 ≤ r ≤ 1",
+      "0 ≤ r ≤ 100",
+      "-∞ < r < ∞"
+    ],
+    "correctAnswer": 1,
+    "explanation": "相関係数は-1から1の範囲の値を取ります。1に近いほど正の相関、-1に近いほど負の相関が強いです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 8016,
+    "examType": "statistics-grade2",
+    "category": "相関と回帰",
+    "question": "相関係数が0に近いとき、2つの変数の関係はどうか。",
+    "choices": [
+      "強い正の相関がある",
+      "強い負の相関がある",
+      "線形的な関係が弱い",
+      "必ず独立である"
+    ],
+    "correctAnswer": 2,
+    "explanation": "相関係数が0に近いとき、線形的な関係は弱いですが、非線形の関係がある可能性は排除できません。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 8017,
+    "examType": "statistics-grade2",
+    "category": "相関と回帰",
+    "question": "単回帰分析において、説明変数と目的変数の関係を表す式はどれか。",
+    "choices": [
+      "y = ax + b",
+      "y = a + bx + cx²",
+      "y = a × b^x",
+      "y = log(x)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "単回帰分析では y = a + bx （または y = ax + b）の一次式で関係を表します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 8018,
+    "examType": "statistics-grade2",
+    "category": "相関と回帰",
+    "question": "決定係数R²の意味として正しいものはどれか。",
+    "choices": [
+      "回帰式による説明力の割合",
+      "相関係数の2乗",
+      "残差の平方和",
+      "A・Bどれも正しい"
+    ],
+    "correctAnswer": 3,
+    "explanation": "決定係数は回帰式による説明力の割合であり、単回帰では相関係数の2乗に等しくなります。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 8019,
+    "examType": "statistics-grade2",
+    "category": "t検定",
+    "question": "2つの独立な標本の平均値の差を検定する方法はどれか。",
+    "choices": [
+      "対応のあるt検定",
+      "対応のないt検定",
+      "カイ二乗検定",
+      "F検定"
+    ],
+    "correctAnswer": 1,
+    "explanation": "2つの独立な標本の平均値の差を検定するには対応のないt検定を用います。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 8020,
+    "examType": "statistics-grade2",
+    "category": "t検定",
+    "question": "同一対象の処理前後のデータを比較する検定方法はどれか。",
+    "choices": [
+      "対応のあるt検定",
+      "対応のないt検定",
+      "カイ二乗検定",
+      "分散分析"
+    ],
+    "correctAnswer": 0,
+    "explanation": "同一対象の前後比較など、対応のあるデータには対応のあるt検定を用います。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 8021,
+    "examType": "statistics-grade2",
+    "category": "分散分析",
+    "question": "3つ以上の群の平均値の差を検定する方法はどれか。",
+    "choices": [
+      "t検定",
+      "分散分析（ANOVA）",
+      "カイ二乗検定",
+      "相関分析"
+    ],
+    "correctAnswer": 1,
+    "explanation": "3つ以上の群の平均値の差を同時に検定するには分散分析（ANOVA）を用います。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 8022,
+    "examType": "statistics-grade2",
+    "category": "カイ二乗検定",
+    "question": "カテゴリカルデータの独立性を検定する方法はどれか。",
+    "choices": [
+      "t検定",
+      "分散分析",
+      "カイ二乗検定",
+      "回帰分析"
+    ],
+    "correctAnswer": 2,
+    "explanation": "カテゴリカルデータ（質的データ）の独立性や適合度の検定にはカイ二乗検定を用います。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 8023,
+    "examType": "statistics-grade2",
+    "category": "標本抽出",
+    "question": "母集団から偏りなく標本を抽出する方法を何というか。",
+    "choices": [
+      "任意抽出",
+      "無作為抽出",
+      "有意抽出",
+      "層別抽出"
+    ],
+    "correctAnswer": 1,
+    "explanation": "偏りなく標本を抽出する方法を無作為抽出（ランダムサンプリング）といいます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 8024,
+    "examType": "statistics-grade2",
+    "category": "標本抽出",
+    "question": "中心極限定理の内容として正しいものはどれか。",
+    "choices": [
+      "標本サイズが大きいとき、標本平均は正規分布に近づく",
+      "母集団が正規分布なら標本も正規分布になる",
+      "標本平均と母平均は必ず一致する",
+      "標本サイズが大きいほど分散は大きくなる"
+    ],
+    "correctAnswer": 0,
+    "explanation": "中心極限定理により、母集団の分布によらず、標本サイズが大きいとき標本平均の分布は正規分布に近づきます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 8025,
+    "examType": "statistics-grade2",
+    "category": "実験計画法",
+    "question": "実験において、他の要因の影響を排除するために行う処理はどれか。",
+    "choices": [
+      "無作為化",
+      "反復",
+      "局所管理",
+      "すべて"
+    ],
+    "correctAnswer": 3,
+    "explanation": "実験計画法の3原則は無作為化（ランダム化）、反復、局所管理（ブロック化）です。",
+    "difficulty": "exam"
+  }
+]

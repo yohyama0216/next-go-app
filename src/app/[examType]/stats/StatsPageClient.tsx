@@ -164,6 +164,8 @@ export default function StatsPage() {
       case 'python': return 'Python3認定試験';
       case 'python-data-analysis': return 'Pythonデータ分析';
       case 'statistics-grade2': return '統計検定2級';
+      case 'rest-api': return 'REST API設計';
+      case 'ccna': return 'CCNA';
       default: return '';
     }
   };
