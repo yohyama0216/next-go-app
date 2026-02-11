@@ -399,7 +399,7 @@ export default function StatsPage() {
                 {incorrectQuestions.map(({ question, progress }) => (
                   <div key={question.id} className="list-group-item">
                     <div className="d-flex w-100 justify-content-between">
-                      <h5 className="mb-1">{question.question}</h5>
+                      <h5 className="mb-1 question-text">{question.question}</h5>
                       <small>
                         <span className="badge bg-success me-1">正解 {progress.correctCount}</span>
                         <span className="badge bg-danger">不正解 {progress.incorrectCount}</span>

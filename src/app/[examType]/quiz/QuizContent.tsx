@@ -255,7 +255,7 @@ export default function QuizContent() {
 
           <div className="card">
             <div className="card-body">
-              <h3 className="card-title h5 mb-4">{currentQuestion.question}</h3>
+              <h3 className="card-title h5 mb-4 question-text">{currentQuestion.question}</h3>
 
               <div className="d-grid gap-2">
                 {shuffledChoices.map((choice, shuffledIndex) => {

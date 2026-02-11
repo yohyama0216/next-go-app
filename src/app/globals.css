@@ -197,3 +197,8 @@ footer {
 .alert {
   border-radius: 0.5rem;
 }
+
+.question-text {
+  white-space: pre-wrap;
+  word-break: break-word;
+}

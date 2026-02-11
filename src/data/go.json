@@ -20,9 +20,9 @@
     "category": "宣言と初期化",
     "question": "次のコードのコンパイル結果はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    x := 1\n    x := 2\n    fmt.Println(x)\n}\n",
     "choices": [
-      "2 が出力される",
-      "1 が出力される",
-      "実行時パニックになる",
+      "1",
+      "2",
+      "0",
       "コンパイルエラー"
     ],
     "correctAnswer": 3,
@@ -223,5 +223,155 @@
     "correctAnswer": 1,
     "explanation": "Go は値渡しなので、inc 内の変更は呼び出し元に影響しません。",
     "difficulty": "basic"
+  },
+  {
+    "id": 5016,
+    "examType": "go",
+    "category": "宣言と初期化",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    x := 1\n    x, y := 2, 3\n    fmt.Println(x, y)\n}\n",
+    "choices": [
+      "1 3",
+      "2 3",
+      "1 2",
+      "コンパイルエラー"
+    ],
+    "correctAnswer": 1,
+    "explanation": "短縮宣言は少なくとも1つ新しい変数が必要です。x は再代入され、y が新規宣言されます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 5017,
+    "examType": "go",
+    "category": "スコープ",
+    "question": "次のコードのコンパイル結果はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    for i := 0; i < 2; i++ {\n    }\n    fmt.Println(i)\n}\n",
+    "choices": [
+      "0 が出力される",
+      "1 が出力される",
+      "2 が出力される",
+      "コンパイルエラー"
+    ],
+    "correctAnswer": 3,
+    "explanation": "for の初期化文で宣言した変数は for ブロック内のスコープです。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 5018,
+    "examType": "go",
+    "category": "for文",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    i := 0\n    for {\n        if i == 2 {\n            break\n        }\n        i++\n    }\n    fmt.Println(i)\n}\n",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "for の無限ループで i を 0→1→2 と増やし、2 で break します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 5019,
+    "examType": "go",
+    "category": "switch文",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    x := 3\n    switch {\n    case x < 0:\n        fmt.Print(\"A\")\n    case x < 5:\n        fmt.Print(\"B\")\n    default:\n        fmt.Print(\"C\")\n    }\n}\n",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "コンパイルエラー"
+    ],
+    "correctAnswer": 1,
+    "explanation": "switch に式がない場合は true の case が実行されます。x<5 が真です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 5020,
+    "examType": "go",
+    "category": "range",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    s := \"Go\"\n    for i, r := range s {\n        if i == 0 {\n            fmt.Printf(\"%T\", r)\n        }\n    }\n}\n",
+    "choices": [
+      "byte",
+      "rune",
+      "int32",
+      "string"
+    ],
+    "correctAnswer": 2,
+    "explanation": "range で文字列を回すと r は rune（実体は int32）になり、%T は int32 を出力します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 5021,
+    "examType": "go",
+    "category": "map",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    m := map[string]int{\"a\": 1}\n    delete(m, \"a\")\n    _, ok := m[\"a\"]\n    fmt.Println(ok)\n}\n",
+    "choices": [
+      "true",
+      "false",
+      "0",
+      "コンパイルエラー"
+    ],
+    "correctAnswer": 1,
+    "explanation": "delete で削除したキーは存在しないため ok は false になります。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 5022,
+    "examType": "go",
+    "category": "defer",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc f() (x int) {\n    defer func() { x++ }()\n    return 1\n}\n\nfunc main() {\n    fmt.Println(f())\n}\n",
+    "choices": [
+      "1",
+      "2",
+      "0",
+      "コンパイルエラー"
+    ],
+    "correctAnswer": 1,
+    "explanation": "名前付き戻り値は defer 内で変更でき、戻り値に反映されます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 5023,
+    "examType": "go",
+    "category": "interface",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    var i interface{} = 10\n    switch i.(type) {\n    case int:\n        fmt.Print(\"I\")\n    case string:\n        fmt.Print(\"S\")\n    }\n}\n",
+    "choices": [
+      "I",
+      "S",
+      "IS",
+      "コンパイルエラー"
+    ],
+    "correctAnswer": 0,
+    "explanation": "型スイッチで int に一致するため I が出力されます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 5024,
+    "examType": "go",
+    "category": "型アサーション",
+    "question": "次のコードの結果はどれか。\n\npackage main\n\nfunc main() {\n    var i interface{} = 1\n    _ = i.(string)\n}\n",
+    "choices": [
+      "コンパイルエラー",
+      "実行時パニック",
+      "何も起きない",
+      "空文字になる"
+    ],
+    "correctAnswer": 1,
+    "explanation": "ok を受け取らない型アサーションが失敗すると実行時パニックになります。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 5025,
+    "examType": "go",
+    "category": "PHPからの移行",
+    "question": "PHPの配列の感覚で書いた次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    s := []int{}\n    append(s, 1)\n    fmt.Println(len(s))\n}\n",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "コンパイルエラー"
+    ],
+    "correctAnswer": 0,
+    "explanation": "append は新しいスライスを返すため、結果を代入しないと元のスライスは変わりません。",
+    "difficulty": "exam"
   }
 ]
