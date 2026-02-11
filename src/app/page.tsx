@@ -7,12 +7,12 @@ import { withBase } from '@/utils/links';
 
 export default function Home() {
   const examTypes: ExamType[] = [
-    // 'takken', 
-    // 'land-surveyor', 
-    // 'real-estate-appraiser', 
-    // 'rental-property-manager', 
-    // 'condominium-manager', 
-    'web-design-3'
+    'takken', 
+    'land-surveyor', 
+    'real-estate-appraiser', 
+    'rental-property-manager', 
+    'condominium-manager', 
+    // 'web-design-3'
   ];
 
   return (
