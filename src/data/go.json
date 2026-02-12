@@ -373,5 +373,305 @@
     "correctAnswer": 0,
     "explanation": "append は新しいスライスを返すため、結果を代入しないと元のスライスは変わりません。",
     "difficulty": "exam"
+  },
+  {
+    "id": 5026,
+    "examType": "go",
+    "category": "スライス",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    s := []int{1, 2, 3, 4}\n    t := s[1:3]\n    fmt.Println(t)\n}\n",
+    "choices": [
+      "[1 2]",
+      "[2 3]",
+      "[2 3 4]",
+      "[1 2 3]"
+    ],
+    "correctAnswer": 1,
+    "explanation": "スライス s[1:3] は index 1 と 2 の要素を取り出します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 5027,
+    "examType": "go",
+    "category": "スライス",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    s := make([]int, 2, 4)\n    fmt.Println(len(s), cap(s))\n}\n",
+    "choices": [
+      "2 2",
+      "2 4",
+      "4 2",
+      "4 4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "make([]int, len, cap) で len=2, cap=4 です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 5028,
+    "examType": "go",
+    "category": "スライス",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    s := []int{1, 2, 3}\n    t := append(s, 4)\n    fmt.Println(len(s), len(t))\n}\n",
+    "choices": [
+      "3 3",
+      "3 4",
+      "4 4",
+      "4 3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "append は新しいスライスを返します。s の長さは 3、t は 4 です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 5029,
+    "examType": "go",
+    "category": "配列",
+    "question": "次のコードのコンパイル結果はどれか。\n\npackage main\n\nfunc main() {\n    a := [2]int{1, 2}\n    b := [3]int{1, 2, 3}\n    _ = a == b\n}\n",
+    "choices": [
+      "true",
+      "false",
+      "コンパイルエラー",
+      "実行時パニック"
+    ],
+    "correctAnswer": 2,
+    "explanation": "配列は型に長さを含むため、[2]int と [3]int は異なる型で比較できません。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 5030,
+    "examType": "go",
+    "category": "文字列",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    s := "Go"\n    fmt.Println(len(s))\n}\n",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "len はバイト数を返します。\"Go\" は 2 バイトです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 5031,
+    "examType": "go",
+    "category": "文字列",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    s := \"あ\"\n    fmt.Println(len(s))\n}\n",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "UTF-8 では \"あ\" は 3 バイトです。len はバイト数を返します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 5032,
+    "examType": "go",
+    "category": "構造体",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\ntype User struct {\n    Name string\n}\n\nfunc main() {\n    u := User{Name: \"A\"}\n    fmt.Println(u.Name)\n}\n",
+    "choices": [
+      "A",
+      "",
+      "0",
+      "コンパイルエラー"
+    ],
+    "correctAnswer": 0,
+    "explanation": "構造体リテラルで Name に \"A\" を代入しています。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 5033,
+    "examType": "go",
+    "category": "構造体",
+    "question": "次のコードのコンパイル結果はどれか。\n\npackage main\n\ntype User struct {\n    name string\n}\n\nfunc main() {\n    u := User{name: \"A\"}\n    _ = u.Name\n}\n",
+    "choices": [
+      "A が出力される",
+      "空文字が出力される",
+      "コンパイルエラー",
+      "実行時パニック"
+    ],
+    "correctAnswer": 2,
+    "explanation": "フィールド名は name であり、Name は存在しないためコンパイルエラーです。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 5034,
+    "examType": "go",
+    "category": "ポインタ",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    x := 1\n    p := &x\n    *p = 2\n    fmt.Println(x)\n}\n",
+    "choices": [
+      "1",
+      "2",
+      "0",
+      "コンパイルエラー"
+    ],
+    "correctAnswer": 1,
+    "explanation": "ポインタ経由で値を変更すると元の変数が更新されます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 5035,
+    "examType": "go",
+    "category": "関数",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc add(a, b int) int {\n    return a + b\n}\n\nfunc main() {\n    fmt.Println(add(2, 3))\n}\n",
+    "choices": [
+      "2",
+      "3",
+      "5",
+      "23"
+    ],
+    "correctAnswer": 2,
+    "explanation": "add(2,3) は 5 を返します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 5036,
+    "examType": "go",
+    "category": "関数",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc f() (x int) {\n    x = 1\n    return\n}\n\nfunc main() {\n    fmt.Println(f())\n}\n",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "コンパイルエラー"
+    ],
+    "correctAnswer": 1,
+    "explanation": "名前付き戻り値は return だけで値が返されます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 5037,
+    "examType": "go",
+    "category": "エラー処理",
+    "question": "Go のエラー処理で一般的な書き方として正しいものはどれか。",
+    "choices": [
+      "try-catch を使う",
+      "if err != nil を使う",
+      "throws を使う",
+      "panic を常用する"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Go では戻り値の err を if err != nil でチェックするのが一般的です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 5038,
+    "examType": "go",
+    "category": "チャネル",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    ch := make(chan int, 1)\n    ch <- 10\n    fmt.Println(<-ch)\n}\n",
+    "choices": [
+      "0",
+      "10",
+      "コンパイルエラー",
+      "デッドロック"
+    ],
+    "correctAnswer": 1,
+    "explanation": "バッファ付きチャネルに 10 を送り、受信して表示します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 5039,
+    "examType": "go",
+    "category": "チャネル",
+    "question": "次のコードの結果はどれか。\n\npackage main\n\nfunc main() {\n    ch := make(chan int)\n    ch <- 1\n}\n",
+    "choices": [
+      "1 が出力される",
+      "何も起きない",
+      "デッドロック",
+      "コンパイルエラー"
+    ],
+    "correctAnswer": 2,
+    "explanation": "受信側がないため、送信でブロックしデッドロックになります。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 5040,
+    "examType": "go",
+    "category": "ゴルーチン",
+    "question": "ゴルーチンを起動するためのキーワードはどれか。",
+    "choices": [
+      "go",
+      "goroutine",
+      "async",
+      "spawn"
+    ],
+    "correctAnswer": 0,
+    "explanation": "go キーワードで新しいゴルーチンを起動します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 5041,
+    "examType": "go",
+    "category": "メソッド",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\ntype Counter struct {\n    n int\n}\n\nfunc (c *Counter) Inc() {\n    c.n++\n}\n\nfunc main() {\n    c := Counter{}\n    c.Inc()\n    fmt.Println(c.n)\n}\n",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "コンパイルエラー"
+    ],
+    "correctAnswer": 1,
+    "explanation": "ポインタレシーバで n をインクリメントします。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 5042,
+    "examType": "go",
+    "category": "パッケージ",
+    "question": "Go でパッケージ外から参照可能な識別子の条件はどれか。",
+    "choices": [
+      "大文字で始まる",
+      "小文字で始まる",
+      "アンダースコアを含む",
+      "数字で始まる"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Go では大文字で始まる識別子がエクスポートされます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 5043,
+    "examType": "go",
+    "category": "型変換",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    var x int = 65\n    fmt.Println(string(x))\n}\n",
+    "choices": [
+      "65",
+      "A",
+      "コンパイルエラー",
+      "空文字"
+    ],
+    "correctAnswer": 1,
+    "explanation": "int を string に変換すると Unicode コードポイントとして扱われます。65 は 'A' です。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 5044,
+    "examType": "go",
+    "category": "型推論",
+    "question": "次のコードの x の型はどれか。\n\npackage main\n\nfunc main() {\n    x := 1.0\n    _ = x\n}\n",
+    "choices": [
+      "int",
+      "float32",
+      "float64",
+      "complex64"
+    ],
+    "correctAnswer": 2,
+    "explanation": "浮動小数リテラル 1.0 はデフォルトで float64 です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 5045,
+    "examType": "go",
+    "category": "比較",
+    "question": "次のコードの出力はどれか。\n\npackage main\nimport \"fmt\"\n\nfunc main() {\n    a := []int{1, 2}\n    b := []int{1, 2}\n    fmt.Println(a == b)\n}\n",
+    "choices": [
+      "true",
+      "false",
+      "コンパイルエラー",
+      "実行時パニック"
+    ],
+    "correctAnswer": 2,
+    "explanation": "スライスは比較演算子で比較できません（nil との比較のみ可能）。",
+    "difficulty": "exam"
   }
 ]
