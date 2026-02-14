@@ -1,4 +1,4 @@
-export type ExamType = 'takken' | 'land-surveyor' | 'real-estate-appraiser' | 'rental-property-manager' | 'condominium-manager' | 'web-design-3' | 'go' | 'python' | 'python-data-analysis' | 'statistics-grade2' | 'rest-api' | 'ccna';
+export type ExamType = 'takken' | 'land-surveyor' | 'real-estate-appraiser' | 'rental-property-manager' | 'condominium-manager' | 'web-design-3' | 'go' | 'python' | 'python-data-analysis' | 'statistics-grade2' | 'rest-api' | 'ccna' | 'aws-saa' | 'aws-clf' | 'aws-sap' | 'aws-dop' | 'gcp-pca' | 'azure-az305';
 
 export interface Question {
   id: number;

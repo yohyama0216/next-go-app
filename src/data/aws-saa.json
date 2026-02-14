@@ -1,0 +1,377 @@
+[
+  {
+    "id": 11001,
+    "examType": "aws-saa",
+    "category": "基本概念",
+    "question": "AWSの共有責任モデルで、顧客が責任を持つ範囲はどれか。",
+    "choices": [
+      "データセンターの物理セキュリティ",
+      "ハードウェアの廃棄",
+      "アプリケーションとデータのセキュリティ",
+      "基盤ネットワークの冗長化"
+    ],
+    "correctAnswer": 2,
+    "explanation": "顧客はアプリケーション、データ、IAM設定、OSやミドルウェア設定などに責任を持ちます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 11002,
+    "examType": "aws-saa",
+    "category": "コンピューティング",
+    "question": "EC2インスタンスのスケーリングに最も適したサービスはどれか。",
+    "choices": [
+      "AWS Auto Scaling",
+      "AWS Backup",
+      "AWS Config",
+      "AWS Shield"
+    ],
+    "correctAnswer": 0,
+    "explanation": "EC2の台数を負荷に応じて自動的に調整するのはAWS Auto Scalingです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 11003,
+    "examType": "aws-saa",
+    "category": "コンピューティング",
+    "question": "サーバーレスでイベント駆動の処理を実行するサービスはどれか。",
+    "choices": [
+      "Amazon EC2",
+      "AWS Lambda",
+      "Amazon RDS",
+      "Amazon ECS"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS Lambdaはサーバーレスでコードを実行できるサービスです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 11004,
+    "examType": "aws-saa",
+    "category": "コンピューティング",
+    "question": "ECSでコンテナを実行するコンピューティングオプションとして正しいものはどれか。",
+    "choices": [
+      "EC2 と Fargate",
+      "S3 と EFS",
+      "RDS と DynamoDB",
+      "CloudFront と Route 53"
+    ],
+    "correctAnswer": 0,
+    "explanation": "ECSはEC2上またはFargate上でコンテナを実行できます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 11005,
+    "examType": "aws-saa",
+    "category": "ストレージ",
+    "question": "オブジェクトストレージを提供するサービスはどれか。",
+    "choices": [
+      "Amazon EBS",
+      "Amazon S3",
+      "Amazon EFS",
+      "Amazon FSx"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon S3はオブジェクトストレージサービスです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 11006,
+    "examType": "aws-saa",
+    "category": "ストレージ",
+    "question": "S3でデータを低コストで長期保管するストレージクラスはどれか。",
+    "choices": [
+      "S3 Standard",
+      "S3 Intelligent-Tiering",
+      "S3 Glacier Flexible Retrieval",
+      "S3 Standard-Infrequent Access"
+    ],
+    "correctAnswer": 2,
+    "explanation": "S3 Glacierは長期アーカイブ向けの低コストストレージです。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 11007,
+    "examType": "aws-saa",
+    "category": "ストレージ",
+    "question": "EC2にアタッチするブロックストレージはどれか。",
+    "choices": [
+      "Amazon EBS",
+      "Amazon S3",
+      "Amazon EFS",
+      "Amazon FSx for Lustre"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon EBSはEC2向けのブロックストレージです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 11008,
+    "examType": "aws-saa",
+    "category": "ネットワーキング",
+    "question": "VPC内のリソースがインターネットへアクセスするために必要なものはどれか。",
+    "choices": [
+      "Internet Gateway",
+      "NAT Gateway",
+      "VPC Peering",
+      "Transit Gateway"
+    ],
+    "correctAnswer": 0,
+    "explanation": "VPCとインターネットを接続するにはInternet Gatewayが必要です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 11009,
+    "examType": "aws-saa",
+    "category": "ネットワーキング",
+    "question": "プライベートサブネットのインスタンスがアウトバウンド通信のみ行う場合に使用するサービスはどれか。",
+    "choices": [
+      "Internet Gateway",
+      "NAT Gateway",
+      "Direct Connect",
+      "VPC Endpoint"
+    ],
+    "correctAnswer": 1,
+    "explanation": "NAT Gatewayはプライベートサブネットからのアウトバウンド通信を可能にします。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 11010,
+    "examType": "aws-saa",
+    "category": "セキュリティ",
+    "question": "IAMで最小権限を実現するために行うべきことはどれか。",
+    "choices": [
+      "すべてのユーザーにAdministratorAccessを付与",
+      "必要な操作だけを許可するポリシーを付与",
+      "アクセスキーを共有",
+      "MFAを無効化"
+    ],
+    "correctAnswer": 1,
+    "explanation": "最小権限の原則では、必要な権限のみを付与します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 11011,
+    "examType": "aws-saa",
+    "category": "セキュリティ",
+    "question": "AWSアカウントのルートユーザーに推奨される対策はどれか。",
+    "choices": [
+      "アクセスキーを日常利用する",
+      "MFAを有効化する",
+      "複数の人で共有する",
+      "削除する"
+    ],
+    "correctAnswer": 1,
+    "explanation": "ルートユーザーにはMFAの有効化が強く推奨されます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 11012,
+    "examType": "aws-saa",
+    "category": "データベース",
+    "question": "フルマネージドなリレーショナルデータベースサービスはどれか。",
+    "choices": [
+      "Amazon RDS",
+      "Amazon DynamoDB",
+      "Amazon S3",
+      "Amazon ElastiCache"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon RDSはフルマネージドなリレーショナルデータベースです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 11013,
+    "examType": "aws-saa",
+    "category": "データベース",
+    "question": "ミリ秒単位の低レイテンシでスケールするNoSQLデータベースはどれか。",
+    "choices": [
+      "Amazon RDS",
+      "Amazon DynamoDB",
+      "Amazon Redshift",
+      "Amazon Aurora"
+    ],
+    "correctAnswer": 1,
+    "explanation": "DynamoDBはフルマネージドなNoSQLデータベースです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 11014,
+    "examType": "aws-saa",
+    "category": "可用性",
+    "question": "高可用性を実現するために、EC2を複数のAZに配置する設計はどれか。",
+    "choices": [
+      "単一AZ配置",
+      "マルチAZ配置",
+      "スポット配置",
+      "専有ホスト配置"
+    ],
+    "correctAnswer": 1,
+    "explanation": "複数のAZに配置するマルチAZ設計が高可用性に有効です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 11015,
+    "examType": "aws-saa",
+    "category": "可用性",
+    "question": "RDSのマルチAZ構成の主な目的はどれか。",
+    "choices": [
+      "読み取り性能の向上",
+      "コスト削減",
+      "高可用性と自動フェイルオーバー",
+      "バックアップ不要化"
+    ],
+    "correctAnswer": 2,
+    "explanation": "RDSのマルチAZは高可用性と自動フェイルオーバーを提供します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 11016,
+    "examType": "aws-saa",
+    "category": "監視",
+    "question": "AWSリソースのメトリクスを収集・監視するサービスはどれか。",
+    "choices": [
+      "AWS CloudTrail",
+      "Amazon CloudWatch",
+      "AWS Config",
+      "AWS Budgets"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon CloudWatchはメトリクスやログの監視サービスです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 11017,
+    "examType": "aws-saa",
+    "category": "監視",
+    "question": "AWSアカウント内のAPIコール履歴を記録するサービスはどれか。",
+    "choices": [
+      "AWS CloudTrail",
+      "Amazon CloudWatch",
+      "AWS X-Ray",
+      "AWS Inspector"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS CloudTrailはAPIコール履歴を記録します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 11018,
+    "examType": "aws-saa",
+    "category": "コスト最適化",
+    "question": "定常的なワークロードでコスト削減に有効な購入オプションはどれか。",
+    "choices": [
+      "オンデマンド",
+      "リザーブドインスタンス",
+      "スポットインスタンス",
+      "Dedicated Host"
+    ],
+    "correctAnswer": 1,
+    "explanation": "長期利用が見込まれる場合、リザーブドインスタンスでコストを削減できます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 11019,
+    "examType": "aws-saa",
+    "category": "コスト最適化",
+    "question": "AWSのコスト異常を検知するサービスはどれか。",
+    "choices": [
+      "AWS Budgets",
+      "Cost Explorer",
+      "AWS Cost Anomaly Detection",
+      "Trusted Advisor"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS Cost Anomaly Detectionはコスト異常を検知します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 11020,
+    "examType": "aws-saa",
+    "category": "設計原則",
+    "question": "Well-Architected Frameworkの柱に含まれないものはどれか。",
+    "choices": [
+      "セキュリティ",
+      "信頼性",
+      "可観測性",
+      "コスト最適化"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Well-Architected Frameworkの柱は、運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化、持続可能性です。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 11021,
+    "examType": "aws-saa",
+    "category": "配信",
+    "question": "コンテンツ配信を高速化するCDNサービスはどれか。",
+    "choices": [
+      "Amazon CloudFront",
+      "Amazon Route 53",
+      "AWS Global Accelerator",
+      "Amazon API Gateway"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon CloudFrontはCDNサービスで、コンテンツ配信を高速化します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 11022,
+    "examType": "aws-saa",
+    "category": "配信",
+    "question": "ドメイン名のDNSルーティングを提供するサービスはどれか。",
+    "choices": [
+      "Amazon Route 53",
+      "Amazon CloudFront",
+      "AWS Direct Connect",
+      "Amazon VPC"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon Route 53はDNSサービスです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 11023,
+    "examType": "aws-saa",
+    "category": "アーキテクチャ",
+    "question": "マイクロサービス間の疎結合を実現するために適したサービスはどれか。",
+    "choices": [
+      "Amazon SQS",
+      "Amazon EBS",
+      "Amazon CloudFront",
+      "Amazon Route 53"
+    ],
+    "correctAnswer": 0,
+    "explanation": "SQSはメッセージングによって疎結合な連携を実現します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 11024,
+    "examType": "aws-saa",
+    "category": "アーキテクチャ",
+    "question": "イベントドリブンアーキテクチャでイベントバスとして利用できるサービスはどれか。",
+    "choices": [
+      "Amazon EventBridge",
+      "Amazon S3",
+      "Amazon RDS",
+      "Amazon EC2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon EventBridgeはイベントバスとして利用できます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 11025,
+    "examType": "aws-saa",
+    "category": "ストレージ",
+    "question": "EFSの特徴として正しいものはどれか。",
+    "choices": [
+      "オブジェクトストレージ",
+      "NFSベースの共有ファイルシステム",
+      "ブロックストレージ",
+      "ローカルストレージ"
+    ],
+    "correctAnswer": 1,
+    "explanation": "EFSはNFSベースのマネージドな共有ファイルシステムです。",
+    "difficulty": "basic"
+  }
+]

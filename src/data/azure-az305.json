@@ -1,0 +1,377 @@
+[
+  {
+    "id": 16001,
+    "examType": "azure-az305",
+    "category": "基本概念",
+    "question": "Azureのリソースを論理的にまとめる単位はどれか。",
+    "choices": [
+      "サブスクリプション",
+      "リソースグループ",
+      "管理グループ",
+      "リージョン"
+    ],
+    "correctAnswer": 1,
+    "explanation": "リソースグループは関連リソースをまとめる単位です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 16002,
+    "examType": "azure-az305",
+    "category": "基本概念",
+    "question": "Azureの課金単位として正しいものはどれか。",
+    "choices": [
+      "リソースグループ",
+      "サブスクリプション",
+      "リージョン",
+      "仮想ネットワーク"
+    ],
+    "correctAnswer": 1,
+    "explanation": "課金はサブスクリプション単位で管理されます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 16003,
+    "examType": "azure-az305",
+    "category": "コンピューティング",
+    "question": "AzureでマネージドKubernetesを提供するサービスはどれか。",
+    "choices": [
+      "Azure Kubernetes Service",
+      "Azure App Service",
+      "Azure Functions",
+      "Azure Container Instances"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AKSはマネージドKubernetesです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 16004,
+    "examType": "azure-az305",
+    "category": "コンピューティング",
+    "question": "サーバーレスの関数実行サービスはどれか。",
+    "choices": [
+      "Azure Functions",
+      "Azure VM",
+      "Azure SQL Database",
+      "Azure Storage"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Azure Functionsはサーバーレスの関数実行サービスです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 16005,
+    "examType": "azure-az305",
+    "category": "ストレージ",
+    "question": "Azureのオブジェクトストレージはどれか。",
+    "choices": [
+      "Azure Blob Storage",
+      "Azure Files",
+      "Azure Disks",
+      "Azure SQL"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Blob Storageはオブジェクトストレージです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 16006,
+    "examType": "azure-az305",
+    "category": "ストレージ",
+    "question": "Azureでマネージドファイル共有を提供するのはどれか。",
+    "choices": [
+      "Azure Files",
+      "Azure Blob Storage",
+      "Azure Disks",
+      "Azure Table Storage"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Azure FilesはSMBベースのファイル共有です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 16007,
+    "examType": "azure-az305",
+    "category": "ネットワーク",
+    "question": "Azureで仮想ネットワークを提供するサービスはどれか。",
+    "choices": [
+      "Virtual Network",
+      "ExpressRoute",
+      "Azure DNS",
+      "Traffic Manager"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Virtual NetworkがVNetサービスです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 16008,
+    "examType": "azure-az305",
+    "category": "ネットワーク",
+    "question": "オンプレミスとAzureを専用線で接続するサービスはどれか。",
+    "choices": [
+      "ExpressRoute",
+      "VPN Gateway",
+      "Application Gateway",
+      "Azure Front Door"
+    ],
+    "correctAnswer": 0,
+    "explanation": "ExpressRouteは専用線接続です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 16009,
+    "examType": "azure-az305",
+    "category": "データベース",
+    "question": "フルマネージドなリレーショナルDBサービスはどれか。",
+    "choices": [
+      "Azure SQL Database",
+      "Cosmos DB",
+      "Azure Storage",
+      "Azure Redis Cache"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Azure SQL DatabaseはマネージドRDBです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 16010,
+    "examType": "azure-az305",
+    "category": "データベース",
+    "question": "グローバル分散のNoSQLデータベースはどれか。",
+    "choices": [
+      "Cosmos DB",
+      "Azure SQL Database",
+      "Azure Database for MySQL",
+      "Azure Synapse"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cosmos DBはグローバル分散NoSQLです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 16011,
+    "examType": "azure-az305",
+    "category": "可用性",
+    "question": "Azureの高可用性設計で複数データセンターに分散する仕組みはどれか。",
+    "choices": [
+      "Availability Zones",
+      "Availability Sets",
+      "Resource Groups",
+      "Management Groups"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Availability Zonesは複数データセンターに分散します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 16012,
+    "examType": "azure-az305",
+    "category": "可用性",
+    "question": "リージョン間のDRを提供するサービスはどれか。",
+    "choices": [
+      "Azure Site Recovery",
+      "Azure Backup",
+      "Azure Monitor",
+      "Azure Policy"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Azure Site RecoveryはDRを提供します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 16013,
+    "examType": "azure-az305",
+    "category": "セキュリティ",
+    "question": "AzureのIDとアクセス管理サービスはどれか。",
+    "choices": [
+      "Azure Active Directory",
+      "Azure Monitor",
+      "Azure Policy",
+      "Azure Firewall"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Azure ADがIDとアクセス管理を提供します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 16014,
+    "examType": "azure-az305",
+    "category": "セキュリティ",
+    "question": "DDoS保護を提供するサービスはどれか。",
+    "choices": [
+      "Azure DDoS Protection",
+      "Azure WAF",
+      "Azure Firewall",
+      "Azure Policy"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Azure DDoS ProtectionがDDoS保護を提供します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 16015,
+    "examType": "azure-az305",
+    "category": "監視",
+    "question": "Azureのメトリクスとログを監視するサービスはどれか。",
+    "choices": [
+      "Azure Monitor",
+      "Azure Policy",
+      "Azure Advisor",
+      "Azure Security Center"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Azure Monitorでメトリクスやログを監視できます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 16016,
+    "examType": "azure-az305",
+    "category": "監視",
+    "question": "アプリケーション監視に特化したサービスはどれか。",
+    "choices": [
+      "Application Insights",
+      "Azure Monitor",
+      "Azure Policy",
+      "Azure Backup"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Application Insightsはアプリケーション監視に特化しています。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 16017,
+    "examType": "azure-az305",
+    "category": "コスト最適化",
+    "question": "長期利用でコスト削減に有効な購入オプションはどれか。",
+    "choices": [
+      "Reserved Instances",
+      "Pay-as-you-go",
+      "Spotのみ",
+      "Dedicated Host"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Reserved Instancesは長期利用の割引を提供します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 16018,
+    "examType": "azure-az305",
+    "category": "コスト最適化",
+    "question": "コスト分析と予算を管理するサービスはどれか。",
+    "choices": [
+      "Cost Management + Billing",
+      "Azure Policy",
+      "Azure Monitor",
+      "Azure Security Center"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cost Management + Billingでコスト管理が可能です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 16019,
+    "examType": "azure-az305",
+    "category": "アーキテクチャ",
+    "question": "メッセージングサービスはどれか。",
+    "choices": [
+      "Azure Service Bus",
+      "Azure Storage",
+      "Azure SQL",
+      "Azure DevOps"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Service Busはメッセージングを提供します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 16020,
+    "examType": "azure-az305",
+    "category": "アーキテクチャ",
+    "question": "イベント駆動のアーキテクチャに適したサービスはどれか。",
+    "choices": [
+      "Event Grid",
+      "Azure SQL",
+      "Azure Files",
+      "Azure Backup"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Event Gridはイベント駆動の連携に適します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 16021,
+    "examType": "azure-az305",
+    "category": "配信",
+    "question": "グローバルなHTTP/HTTPS負荷分散に適したサービスはどれか。",
+    "choices": [
+      "Azure Front Door",
+      "Azure Load Balancer",
+      "Application Gateway",
+      "Traffic Manager"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Azure Front DoorはグローバルなHTTP/HTTPS負荷分散に適しています。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 16022,
+    "examType": "azure-az305",
+    "category": "配信",
+    "question": "DNSベースのトラフィック分散サービスはどれか。",
+    "choices": [
+      "Traffic Manager",
+      "Azure Front Door",
+      "Application Gateway",
+      "Azure DNS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Traffic ManagerはDNSベースの負荷分散です。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 16023,
+    "examType": "azure-az305",
+    "category": "セキュリティ",
+    "question": "WAF機能を提供するサービスはどれか。",
+    "choices": [
+      "Azure Web Application Firewall",
+      "Azure Firewall",
+      "Azure DDoS Protection",
+      "Azure Policy"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Azure WAFはWebアプリケーションの保護を提供します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 16024,
+    "examType": "azure-az305",
+    "category": "セキュリティ",
+    "question": "機密情報を安全に保管するサービスはどれか。",
+    "choices": [
+      "Azure Key Vault",
+      "Azure Storage",
+      "Azure Monitor",
+      "Azure Advisor"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Key Vaultはシークレットや証明書を保管します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 16025,
+    "examType": "azure-az305",
+    "category": "アーキテクチャ",
+    "question": "データウェアハウス分析に適したサービスはどれか。",
+    "choices": [
+      "Azure Synapse Analytics",
+      "Azure Cosmos DB",
+      "Azure SQL Database",
+      "Azure Functions"
+    ],
+    "correctAnswer": 0,
+    "explanation": "SynapseはDWHと分析を提供します。",
+    "difficulty": "exam"
+  }
+]

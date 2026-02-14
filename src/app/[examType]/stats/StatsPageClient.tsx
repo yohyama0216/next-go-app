@@ -166,6 +166,12 @@ export default function StatsPage() {
       case 'statistics-grade2': return '統計検定2級';
       case 'rest-api': return 'REST API設計';
       case 'ccna': return 'CCNA';
+      case 'aws-saa': return 'AWS SAA';
+      case 'aws-clf': return 'AWS CLF';
+      case 'aws-sap': return 'AWS SAP';
+      case 'aws-dop': return 'AWS DOP';
+      case 'gcp-pca': return 'GCP PCA';
+      case 'azure-az305': return 'Azure AZ-305';
       default: return '';
     }
   };

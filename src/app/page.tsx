@@ -28,6 +28,18 @@ export default function Home() {
     {
       name: 'ネットワークコース',
       exams: ['ccna']
+    },
+    {
+      name: 'AWSコース',
+      exams: ['aws-clf', 'aws-saa', 'aws-sap', 'aws-dop']
+    },
+    {
+      name: 'Google Cloudコース',
+      exams: ['gcp-pca']
+    },
+    {
+      name: 'Azureコース',
+      exams: ['azure-az305']
     }
   ];
 

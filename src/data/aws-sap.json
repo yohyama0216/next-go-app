@@ -1,0 +1,377 @@
+[
+  {
+    "id": 13001,
+    "examType": "aws-sap",
+    "category": "アーキテクチャ設計",
+    "question": "マルチアカウント環境でガバナンスを強化するために推奨されるサービスはどれか。",
+    "choices": [
+      "AWS Organizations",
+      "Amazon EC2",
+      "Amazon S3",
+      "AWS WAF"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Organizationsはアカウント管理とガバナンスを提供します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 13002,
+    "examType": "aws-sap",
+    "category": "アーキテクチャ設計",
+    "question": "ハブ&スポーク型で多数VPCを接続するのに適したサービスはどれか。",
+    "choices": [
+      "VPC Peering",
+      "Transit Gateway",
+      "Internet Gateway",
+      "NAT Gateway"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Transit Gatewayはハブ&スポーク型でVPC接続を集約できます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 13003,
+    "examType": "aws-sap",
+    "category": "アーキテクチャ設計",
+    "question": "複数リージョンにアクティブ-アクティブで配置する主目的はどれか。",
+    "choices": [
+      "コスト削減",
+      "高可用性と低レイテンシ",
+      "バックアップのみ",
+      "単一障害点の増加"
+    ],
+    "correctAnswer": 1,
+    "explanation": "アクティブ-アクティブは高可用性と低レイテンシに有効です。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 13004,
+    "examType": "aws-sap",
+    "category": "ネットワーキング",
+    "question": "オンプレミスとAWS間の専用線接続サービスはどれか。",
+    "choices": [
+      "AWS Direct Connect",
+      "VPN",
+      "VPC Peering",
+      "Transit Gateway"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Direct Connectは専用線でAWSに接続します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 13005,
+    "examType": "aws-sap",
+    "category": "ネットワーキング",
+    "question": "グローバルアクセラレータが適する用途はどれか。",
+    "choices": [
+      "静的コンテンツ配信",
+      "TCP/UDPトラフィックの低遅延化",
+      "データベースのレプリケーション",
+      "バッチ処理"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Global AcceleratorはAnycastでTCP/UDPを高速化します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 13006,
+    "examType": "aws-sap",
+    "category": "ストレージ",
+    "question": "マルチAZで共有できるファイルストレージはどれか。",
+    "choices": [
+      "Amazon EFS",
+      "Amazon EBS",
+      "Amazon S3",
+      "Amazon Instance Store"
+    ],
+    "correctAnswer": 0,
+    "explanation": "EFSはNFSベースの共有ファイルストレージです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 13007,
+    "examType": "aws-sap",
+    "category": "ストレージ",
+    "question": "大量のデータ移行で物理デバイスを利用するサービスはどれか。",
+    "choices": [
+      "AWS Snowball",
+      "AWS Backup",
+      "AWS Storage Gateway",
+      "AWS DMS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Snowballは物理デバイスによるデータ移行サービスです。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 13008,
+    "examType": "aws-sap",
+    "category": "データベース",
+    "question": "Aurora Global Databaseの主な用途はどれか。",
+    "choices": [
+      "低コストな単一AZ運用",
+      "グローバル分散の低遅延読み取り",
+      "データのローカル暗号化",
+      "バッチ処理"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Aurora Global Databaseは複数リージョンで低遅延の読み取りを提供します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 13009,
+    "examType": "aws-sap",
+    "category": "データベース",
+    "question": "DynamoDBのグローバルテーブルの主な利点はどれか。",
+    "choices": [
+      "単一リージョンの高速化",
+      "マルチリージョンのアクティブ-アクティブ",
+      "コスト削減のみ",
+      "RDSの代替"
+    ],
+    "correctAnswer": 1,
+    "explanation": "グローバルテーブルはマルチリージョンでアクティブ-アクティブを実現します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 13010,
+    "examType": "aws-sap",
+    "category": "セキュリティ",
+    "question": "集中管理の監査証跡を組織全体で収集する機能はどれか。",
+    "choices": [
+      "CloudTrail 組織の証跡",
+      "CloudWatch Logs",
+      "AWS Config ルール",
+      "IAM ロール"
+    ],
+    "correctAnswer": 0,
+    "explanation": "CloudTrailの組織の証跡で一括収集できます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 13011,
+    "examType": "aws-sap",
+    "category": "セキュリティ",
+    "question": "機密データの検出に利用できるサービスはどれか。",
+    "choices": [
+      "Amazon Macie",
+      "Amazon GuardDuty",
+      "AWS Shield",
+      "AWS WAF"
+    ],
+    "correctAnswer": 0,
+    "explanation": "MacieはS3内の機密データを検出します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 13012,
+    "examType": "aws-sap",
+    "category": "運用",
+    "question": "分散トレースを提供するサービスはどれか。",
+    "choices": [
+      "AWS X-Ray",
+      "AWS Config",
+      "Amazon Inspector",
+      "AWS Backup"
+    ],
+    "correctAnswer": 0,
+    "explanation": "X-Rayは分散トレースと可視化を提供します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 13013,
+    "examType": "aws-sap",
+    "category": "運用",
+    "question": "イベント駆動の自動修復に適したサービスはどれか。",
+    "choices": [
+      "EventBridge + Lambda",
+      "S3 + Glacier",
+      "CloudFront + Route 53",
+      "IAM + KMS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "イベント検知とLambdaで自動修復を実装できます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 13014,
+    "examType": "aws-sap",
+    "category": "コスト最適化",
+    "question": "長期利用のEC2に最適なコスト最適化策はどれか。",
+    "choices": [
+      "オンデマンド",
+      "リザーブドインスタンス",
+      "スポットインスタンス",
+      "Dedicated Host"
+    ],
+    "correctAnswer": 1,
+    "explanation": "長期利用ではリザーブドインスタンスが有利です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 13015,
+    "examType": "aws-sap",
+    "category": "コスト最適化",
+    "question": "Savings Plansの主な特徴はどれか。",
+    "choices": [
+      "特定インスタンスに固定",
+      "柔軟な料金割引",
+      "リージョン固定",
+      "スポット専用"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Savings Plansは使用量ベースで柔軟に割引が適用されます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 13016,
+    "examType": "aws-sap",
+    "category": "可用性",
+    "question": "Route 53のヘルスチェックで実現できることはどれか。",
+    "choices": [
+      "自動フェイルオーバー",
+      "データ暗号化",
+      "VPC作成",
+      "インスタンス起動"
+    ],
+    "correctAnswer": 0,
+    "explanation": "ヘルスチェックで正常性を判定し、フェイルオーバーが可能です。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 13017,
+    "examType": "aws-sap",
+    "category": "可用性",
+    "question": "S3のクロスリージョンレプリケーションの用途はどれか。",
+    "choices": [
+      "低レイテンシ読み取り",
+      "災害対策と耐久性向上",
+      "コスト削減のみ",
+      "計算処理"
+    ],
+    "correctAnswer": 1,
+    "explanation": "クロスリージョンレプリケーションでDRや耐久性を向上できます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 13018,
+    "examType": "aws-sap",
+    "category": "移行",
+    "question": "データベース移行に特化したサービスはどれか。",
+    "choices": [
+      "AWS DMS",
+      "AWS Snowball",
+      "AWS DataSync",
+      "AWS Backup"
+    ],
+    "correctAnswer": 0,
+    "explanation": "DMSはデータベース移行向けのサービスです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 13019,
+    "examType": "aws-sap",
+    "category": "移行",
+    "question": "オンプレミスNASのデータ同期に適したサービスはどれか。",
+    "choices": [
+      "AWS DataSync",
+      "AWS DMS",
+      "AWS Snowball",
+      "AWS Glue"
+    ],
+    "correctAnswer": 0,
+    "explanation": "DataSyncはオンプレミスとAWS間のデータ転送に適します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 13020,
+    "examType": "aws-sap",
+    "category": "ガバナンス",
+    "question": "組織全体の設定標準を適用するサービスはどれか。",
+    "choices": [
+      "AWS Control Tower",
+      "AWS Config",
+      "AWS CloudTrail",
+      "AWS Budgets"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Control Towerはベストプラクティスのガードレールを適用します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 13021,
+    "examType": "aws-sap",
+    "category": "セキュリティ",
+    "question": "脅威検出に用いるサービスはどれか。",
+    "choices": [
+      "Amazon GuardDuty",
+      "AWS WAF",
+      "AWS Shield",
+      "Amazon Inspector"
+    ],
+    "correctAnswer": 0,
+    "explanation": "GuardDutyは脅威検出サービスです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 13022,
+    "examType": "aws-sap",
+    "category": "セキュリティ",
+    "question": "WAFの主な用途はどれか。",
+    "choices": [
+      "DDoS保護",
+      "Webアプリケーションの保護",
+      "VPN接続",
+      "データ暗号化"
+    ],
+    "correctAnswer": 1,
+    "explanation": "WAFはWebアプリケーションを保護します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 13023,
+    "examType": "aws-sap",
+    "category": "コンピューティング",
+    "question": "コンテナをフルマネージドで実行できるサービスはどれか。",
+    "choices": [
+      "AWS Fargate",
+      "Amazon EC2",
+      "Amazon EBS",
+      "Amazon S3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Fargateはサーバーレスコンテナ実行環境です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 13024,
+    "examType": "aws-sap",
+    "category": "コンピューティング",
+    "question": "EKSの役割として正しいものはどれか。",
+    "choices": [
+      "Kubernetesマネージドサービス",
+      "Dockerレジストリ",
+      "関数実行基盤",
+      "データストア"
+    ],
+    "correctAnswer": 0,
+    "explanation": "EKSはKubernetesのマネージドサービスです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 13025,
+    "examType": "aws-sap",
+    "category": "可用性",
+    "question": "Blue/Greenデプロイの主な目的はどれか。",
+    "choices": [
+      "コスト削減",
+      "ダウンタイム最小化",
+      "セキュリティ強化",
+      "監視の簡素化"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Blue/Greenデプロイは切り替えでダウンタイムを最小化します。",
+    "difficulty": "exam"
+  }
+]

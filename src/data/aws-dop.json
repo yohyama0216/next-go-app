@@ -1,0 +1,377 @@
+[
+  {
+    "id": 14001,
+    "examType": "aws-dop",
+    "category": "運用",
+    "question": "運用の自動化に利用する代表的なサービスはどれか。",
+    "choices": [
+      "AWS Systems Manager",
+      "Amazon S3",
+      "Amazon RDS",
+      "AWS Shield"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Systems Managerは運用の自動化や管理に利用できます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 14002,
+    "examType": "aws-dop",
+    "category": "運用",
+    "question": "インフラをコードとして管理するサービスはどれか。",
+    "choices": [
+      "AWS CloudFormation",
+      "AWS Config",
+      "AWS CloudTrail",
+      "AWS Budgets"
+    ],
+    "correctAnswer": 0,
+    "explanation": "CloudFormationはIaCを提供します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 14003,
+    "examType": "aws-dop",
+    "category": "監視",
+    "question": "メトリクスとアラームを提供するサービスはどれか。",
+    "choices": [
+      "Amazon CloudWatch",
+      "AWS CloudTrail",
+      "AWS Config",
+      "AWS X-Ray"
+    ],
+    "correctAnswer": 0,
+    "explanation": "CloudWatchはメトリクス監視とアラームを提供します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 14004,
+    "examType": "aws-dop",
+    "category": "監視",
+    "question": "AWSリソースの設定変更を継続的に評価するサービスはどれか。",
+    "choices": [
+      "AWS Config",
+      "AWS CloudTrail",
+      "AWS Budgets",
+      "Amazon Inspector"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Configはリソースの設定変更を追跡します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 14005,
+    "examType": "aws-dop",
+    "category": "セキュリティ",
+    "question": "脆弱性評価サービスはどれか。",
+    "choices": [
+      "Amazon Inspector",
+      "Amazon GuardDuty",
+      "AWS Shield",
+      "AWS WAF"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Inspectorは脆弱性評価を行います。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 14006,
+    "examType": "aws-dop",
+    "category": "セキュリティ",
+    "question": "ログの集中管理と検索に適したサービスはどれか。",
+    "choices": [
+      "CloudWatch Logs",
+      "Amazon S3",
+      "AWS Budgets",
+      "AWS Config"
+    ],
+    "correctAnswer": 0,
+    "explanation": "CloudWatch Logsでログの集約と検索ができます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 14007,
+    "examType": "aws-dop",
+    "category": "デプロイ",
+    "question": "継続的デリバリのためのデプロイサービスはどれか。",
+    "choices": [
+      "AWS CodeDeploy",
+      "AWS CodeCommit",
+      "AWS CodeBuild",
+      "AWS CodeArtifact"
+    ],
+    "correctAnswer": 0,
+    "explanation": "CodeDeployはアプリケーションのデプロイを自動化します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 14008,
+    "examType": "aws-dop",
+    "category": "デプロイ",
+    "question": "CIパイプラインを構成するサービスはどれか。",
+    "choices": [
+      "AWS CodePipeline",
+      "AWS CodeCommit",
+      "AWS CodeBuild",
+      "AWS CodeArtifact"
+    ],
+    "correctAnswer": 0,
+    "explanation": "CodePipelineはCI/CDパイプラインを構成します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 14009,
+    "examType": "aws-dop",
+    "category": "デプロイ",
+    "question": "ソースコードの管理に利用するサービスはどれか。",
+    "choices": [
+      "AWS CodeCommit",
+      "AWS CodeBuild",
+      "AWS CodeDeploy",
+      "AWS CodePipeline"
+    ],
+    "correctAnswer": 0,
+    "explanation": "CodeCommitはマネージドなGitリポジトリです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 14010,
+    "examType": "aws-dop",
+    "category": "自動化",
+    "question": "EC2のパッチ適用を自動化するサービスはどれか。",
+    "choices": [
+      "Systems Manager Patch Manager",
+      "AWS Config",
+      "AWS Budgets",
+      "AWS CloudTrail"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Patch Managerはパッチ適用を自動化します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 14011,
+    "examType": "aws-dop",
+    "category": "自動化",
+    "question": "運用手順の自動化に使用するのはどれか。",
+    "choices": [
+      "Systems Manager Automation",
+      "AWS Lambda",
+      "AWS Step Functions",
+      "Amazon EventBridge"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Automationで運用手順を自動化できます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 14012,
+    "examType": "aws-dop",
+    "category": "可用性",
+    "question": "障害時に自動で復旧する設計に必要なものはどれか。",
+    "choices": [
+      "Auto Scalingとヘルスチェック",
+      "単一AZ配置",
+      "固定IPのみ",
+      "手動リカバリ"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Auto Scalingとヘルスチェックで自動復旧が可能です。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 14013,
+    "examType": "aws-dop",
+    "category": "可用性",
+    "question": "RDSのバックアップ保持期間を設定できる機能はどれか。",
+    "choices": [
+      "自動バックアップ",
+      "スナップショットのみ",
+      "CloudTrail",
+      "CloudWatch"
+    ],
+    "correctAnswer": 0,
+    "explanation": "自動バックアップで保持期間を設定できます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 14014,
+    "examType": "aws-dop",
+    "category": "セキュリティ",
+    "question": "GuardDutyの役割はどれか。",
+    "choices": [
+      "脅威検出",
+      "暗号化",
+      "WAF",
+      "DDoS防御"
+    ],
+    "correctAnswer": 0,
+    "explanation": "GuardDutyは脅威検出サービスです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 14015,
+    "examType": "aws-dop",
+    "category": "セキュリティ",
+    "question": "Secrets Managerの用途はどれか。",
+    "choices": [
+      "シークレットの安全な保管とローテーション",
+      "ログ監視",
+      "脅威検出",
+      "ネットワーク保護"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Secrets Managerは認証情報の保管とローテーションを提供します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 14016,
+    "examType": "aws-dop",
+    "category": "ログ",
+    "question": "VPCのトラフィックログを取得するサービスはどれか。",
+    "choices": [
+      "VPC Flow Logs",
+      "CloudTrail",
+      "CloudWatch Metrics",
+      "AWS Config"
+    ],
+    "correctAnswer": 0,
+    "explanation": "VPC Flow LogsはVPC内のトラフィックを記録します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 14017,
+    "examType": "aws-dop",
+    "category": "ログ",
+    "question": "ALBのアクセスログ保存先として適切なのはどれか。",
+    "choices": [
+      "Amazon S3",
+      "Amazon EBS",
+      "Amazon RDS",
+      "Amazon DynamoDB"
+    ],
+    "correctAnswer": 0,
+    "explanation": "ALBアクセスログはS3に保存します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 14018,
+    "examType": "aws-dop",
+    "category": "インシデント対応",
+    "question": "自動通知に適したサービスはどれか。",
+    "choices": [
+      "Amazon SNS",
+      "Amazon SQS",
+      "Amazon EFS",
+      "Amazon EBS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "SNSは通知の配信に適しています。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 14019,
+    "examType": "aws-dop",
+    "category": "インシデント対応",
+    "question": "イベント駆動の運用連携に適したサービスはどれか。",
+    "choices": [
+      "Amazon EventBridge",
+      "Amazon S3",
+      "Amazon RDS",
+      "Amazon EBS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "EventBridgeはイベント駆動の連携に適しています。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 14020,
+    "examType": "aws-dop",
+    "category": "コスト最適化",
+    "question": "ログの保存コスト削減に最適なサービスはどれか。",
+    "choices": [
+      "S3 Glacier",
+      "EBS",
+      "EFS",
+      "FSx"
+    ],
+    "correctAnswer": 0,
+    "explanation": "長期保管にはS3 Glacierが低コストです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 14021,
+    "examType": "aws-dop",
+    "category": "可観測性",
+    "question": "分散トレースに適したサービスはどれか。",
+    "choices": [
+      "AWS X-Ray",
+      "AWS Config",
+      "AWS Budgets",
+      "AWS Backup"
+    ],
+    "correctAnswer": 0,
+    "explanation": "X-Rayは分散トレースを提供します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 14022,
+    "examType": "aws-dop",
+    "category": "可観測性",
+    "question": "メトリクスに基づく自動アクションを行うにはどれか。",
+    "choices": [
+      "CloudWatch Alarms",
+      "CloudTrail",
+      "AWS Config",
+      "AWS Systems Manager"
+    ],
+    "correctAnswer": 0,
+    "explanation": "CloudWatch Alarmsでアクションをトリガーできます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 14023,
+    "examType": "aws-dop",
+    "category": "災害対策",
+    "question": "RPO/RTOを最小にするDR戦略はどれか。",
+    "choices": [
+      "アクティブ-アクティブ",
+      "パイロットライト",
+      "ウォームスタンバイ",
+      "バックアップ&リストア"
+    ],
+    "correctAnswer": 0,
+    "explanation": "アクティブ-アクティブはRPO/RTOを最小化できます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 14024,
+    "examType": "aws-dop",
+    "category": "ガバナンス",
+    "question": "組織全体でベストプラクティスを適用するサービスはどれか。",
+    "choices": [
+      "AWS Control Tower",
+      "AWS Config",
+      "AWS CloudTrail",
+      "AWS Budgets"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Control Towerでガードレールを適用できます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 14025,
+    "examType": "aws-dop",
+    "category": "ガバナンス",
+    "question": "組織内のサービスコントロールポリシーを管理するのはどれか。",
+    "choices": [
+      "AWS Organizations",
+      "AWS IAM",
+      "AWS KMS",
+      "AWS Shield"
+    ],
+    "correctAnswer": 0,
+    "explanation": "OrganizationsでSCPを管理します。",
+    "difficulty": "exam"
+  }
+]

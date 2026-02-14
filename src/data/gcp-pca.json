@@ -1,0 +1,377 @@
+[
+  {
+    "id": 15001,
+    "examType": "gcp-pca",
+    "category": "基本概念",
+    "question": "Google Cloudのリソース階層で最上位に位置するのはどれか。",
+    "choices": [
+      "プロジェクト",
+      "フォルダ",
+      "組織",
+      "フォルダセット"
+    ],
+    "correctAnswer": 2,
+    "explanation": "GCPのリソース階層は 組織 > フォルダ > プロジェクト > リソース の順です。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 15002,
+    "examType": "gcp-pca",
+    "category": "基本概念",
+    "question": "課金アカウントはどの単位に関連付けられるか。",
+    "choices": [
+      "組織のみ",
+      "プロジェクト",
+      "リソース単体",
+      "フォルダのみ"
+    ],
+    "correctAnswer": 1,
+    "explanation": "課金アカウントはプロジェクトに関連付けられます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 15003,
+    "examType": "gcp-pca",
+    "category": "コンピューティング",
+    "question": "GCPのマネージドなKubernetesサービスはどれか。",
+    "choices": [
+      "Cloud Run",
+      "GKE",
+      "App Engine",
+      "Compute Engine"
+    ],
+    "correctAnswer": 1,
+    "explanation": "GKE（Google Kubernetes Engine）はマネージドKubernetesです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 15004,
+    "examType": "gcp-pca",
+    "category": "コンピューティング",
+    "question": "サーバーレスでコンテナを実行するサービスはどれか。",
+    "choices": [
+      "Cloud Run",
+      "Compute Engine",
+      "GKE",
+      "Cloud SQL"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cloud Runはサーバーレスでコンテナを実行します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 15005,
+    "examType": "gcp-pca",
+    "category": "ストレージ",
+    "question": "オブジェクトストレージサービスはどれか。",
+    "choices": [
+      "Cloud Storage",
+      "Persistent Disk",
+      "Filestore",
+      "Cloud SQL"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cloud Storageはオブジェクトストレージです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 15006,
+    "examType": "gcp-pca",
+    "category": "ストレージ",
+    "question": "Compute Engineにアタッチするブロックストレージはどれか。",
+    "choices": [
+      "Persistent Disk",
+      "Cloud Storage",
+      "Filestore",
+      "Bigtable"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Persistent Diskはブロックストレージです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 15007,
+    "examType": "gcp-pca",
+    "category": "ネットワーク",
+    "question": "VPCのグローバルな分散ルーティングを提供するのはどれか。",
+    "choices": [
+      "VPCネットワーク",
+      "Cloud VPN",
+      "Cloud Interconnect",
+      "Cloud NAT"
+    ],
+    "correctAnswer": 0,
+    "explanation": "GCPのVPCはグローバルで分散ルーティングです。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 15008,
+    "examType": "gcp-pca",
+    "category": "ネットワーク",
+    "question": "プライベートIPのみのVMが外部へアウトバウンドするために必要なものはどれか。",
+    "choices": [
+      "Cloud NAT",
+      "Cloud CDN",
+      "Cloud DNS",
+      "Cloud Armor"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cloud NATでアウトバウンドを行います。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 15009,
+    "examType": "gcp-pca",
+    "category": "データベース",
+    "question": "マネージドなMySQL/PostgreSQLを提供するサービスはどれか。",
+    "choices": [
+      "Cloud SQL",
+      "Bigtable",
+      "Firestore",
+      "BigQuery"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cloud SQLはマネージドRDBです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 15010,
+    "examType": "gcp-pca",
+    "category": "データベース",
+    "question": "大規模な分析用DWHサービスはどれか。",
+    "choices": [
+      "BigQuery",
+      "Bigtable",
+      "Spanner",
+      "Firestore"
+    ],
+    "correctAnswer": 0,
+    "explanation": "BigQueryは分析用のデータウェアハウスです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 15011,
+    "examType": "gcp-pca",
+    "category": "データベース",
+    "question": "グローバル分散の強整合RDBはどれか。",
+    "choices": [
+      "Cloud Spanner",
+      "Cloud SQL",
+      "Bigtable",
+      "Firestore"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cloud Spannerはグローバル分散の強整合RDBです。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 15012,
+    "examType": "gcp-pca",
+    "category": "可用性",
+    "question": "高可用性を高めるための一般的な設計はどれか。",
+    "choices": [
+      "単一ゾーン",
+      "複数ゾーン",
+      "単一リージョン単一ゾーン",
+      "単一VMのみ"
+    ],
+    "correctAnswer": 1,
+    "explanation": "複数ゾーンに分散することで可用性が向上します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 15013,
+    "examType": "gcp-pca",
+    "category": "可用性",
+    "question": "Cloud Load Balancingの特徴として正しいものはどれか。",
+    "choices": [
+      "リージョン限定",
+      "グローバル対応",
+      "内部専用",
+      "TCPのみ"
+    ],
+    "correctAnswer": 1,
+    "explanation": "GCPのロードバランシングはグローバルに対応します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 15014,
+    "examType": "gcp-pca",
+    "category": "セキュリティ",
+    "question": "GCPのIAMで最小権限を実現する方法はどれか。",
+    "choices": [
+      "基本ロールの付与",
+      "必要な権限のみを持つカスタムロール",
+      "全員にオーナー権限",
+      "サービスアカウント不要"
+    ],
+    "correctAnswer": 1,
+    "explanation": "カスタムロールで必要最小限の権限を付与します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 15015,
+    "examType": "gcp-pca",
+    "category": "セキュリティ",
+    "question": "DDoS対策のサービスはどれか。",
+    "choices": [
+      "Cloud Armor",
+      "Cloud CDN",
+      "Cloud DNS",
+      "Cloud Logging"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cloud ArmorはDDoS保護とWAFを提供します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 15016,
+    "examType": "gcp-pca",
+    "category": "監視",
+    "question": "メトリクスとアラートを提供するのはどれか。",
+    "choices": [
+      "Cloud Monitoring",
+      "Cloud Trace",
+      "Cloud Deploy",
+      "Cloud Build"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cloud Monitoringでメトリクスとアラートを管理します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 15017,
+    "examType": "gcp-pca",
+    "category": "監視",
+    "question": "分散トレースに適したサービスはどれか。",
+    "choices": [
+      "Cloud Trace",
+      "Cloud Logging",
+      "Cloud Monitoring",
+      "Cloud Scheduler"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cloud Traceは分散トレースを提供します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 15018,
+    "examType": "gcp-pca",
+    "category": "移行",
+    "question": "大規模データの物理移行サービスはどれか。",
+    "choices": [
+      "Transfer Appliance",
+      "Storage Transfer Service",
+      "Dataflow",
+      "Dataproc"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Transfer Applianceは物理デバイスで移行します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 15019,
+    "examType": "gcp-pca",
+    "category": "移行",
+    "question": "オンラインでのデータ移行サービスはどれか。",
+    "choices": [
+      "Storage Transfer Service",
+      "Transfer Appliance",
+      "Dataproc",
+      "Bigtable"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Storage Transfer Serviceはオンライン転送を提供します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 15020,
+    "examType": "gcp-pca",
+    "category": "コスト最適化",
+    "question": "コミット利用で割引を受ける仕組みはどれか。",
+    "choices": [
+      "Committed Use Discounts",
+      "Preemptible VM",
+      "Sustained Use Discounts",
+      "Cloud Billing Export"
+    ],
+    "correctAnswer": 0,
+    "explanation": "コミットメントにより割引を受けるのはCommitted Use Discountsです。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 15021,
+    "examType": "gcp-pca",
+    "category": "アーキテクチャ",
+    "question": "Pub/Subの用途として正しいものはどれか。",
+    "choices": [
+      "メッセージング",
+      "ブロックストレージ",
+      "DNS",
+      "VM管理"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Pub/Subはメッセージングのサービスです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 15022,
+    "examType": "gcp-pca",
+    "category": "アーキテクチャ",
+    "question": "大規模バッチ/ストリーム処理に適したサービスはどれか。",
+    "choices": [
+      "Dataflow",
+      "Dataproc",
+      "Cloud Run",
+      "Cloud Functions"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Dataflowはバッチ/ストリーム処理のマネージドサービスです。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 15023,
+    "examType": "gcp-pca",
+    "category": "アーキテクチャ",
+    "question": "マネージドApache Spark/Hadoopサービスはどれか。",
+    "choices": [
+      "Dataproc",
+      "Dataflow",
+      "BigQuery",
+      "Bigtable"
+    ],
+    "correctAnswer": 0,
+    "explanation": "DataprocはマネージドSpark/Hadoopを提供します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 15024,
+    "examType": "gcp-pca",
+    "category": "可用性",
+    "question": "マルチリージョンにデータを保存できるストレージはどれか。",
+    "choices": [
+      "Cloud Storage（マルチリージョン）",
+      "Persistent Disk",
+      "Filestore",
+      "Cloud SQL"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cloud Storageのマルチリージョンで複数リージョンに保存できます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 15025,
+    "examType": "gcp-pca",
+    "category": "ネットワーク",
+    "question": "オンプレミスとGCP間を専用線で接続するサービスはどれか。",
+    "choices": [
+      "Cloud Interconnect",
+      "Cloud VPN",
+      "VPC Peering",
+      "Cloud NAT"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cloud Interconnectは専用線接続を提供します。",
+    "difficulty": "exam"
+  }
+]

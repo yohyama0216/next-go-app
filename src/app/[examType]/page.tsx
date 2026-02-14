@@ -13,7 +13,13 @@ export function generateStaticParams() {
     { examType: 'python-data-analysis' },
     { examType: 'statistics-grade2' },
     { examType: 'rest-api' },
-    { examType: 'ccna' }
+    { examType: 'ccna' },
+    { examType: 'aws-saa' },
+    { examType: 'aws-clf' },
+    { examType: 'aws-sap' },
+    { examType: 'aws-dop' },
+    { examType: 'gcp-pca' },
+    { examType: 'azure-az305' }
   ];
 }
 

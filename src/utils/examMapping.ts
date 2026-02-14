@@ -60,12 +60,42 @@ export const EXAM_INFO: Record<ExamType, { title: string; description: string; s
     title: 'CCNA対策クイズ',
     description: 'Cisco CCNA相当のネットワーク知識を学べるクイズです。',
     shortName: 'CCNA'
+  },
+  'aws-saa': {
+    title: 'AWS認定SAA対策クイズ',
+    description: 'AWS認定ソリューションアーキテクト アソシエイトの学習用アプリです。',
+    shortName: 'AWS SAA'
+  },
+  'aws-clf': {
+    title: 'AWS認定CLF対策クイズ',
+    description: 'AWS認定クラウドプラクティショナーの学習用アプリです。',
+    shortName: 'AWS CLF'
+  },
+  'aws-sap': {
+    title: 'AWS認定SAP対策クイズ',
+    description: 'AWS認定ソリューションアーキテクト プロフェッショナルの学習用アプリです。',
+    shortName: 'AWS SAP'
+  },
+  'aws-dop': {
+    title: 'AWS認定DOP対策クイズ',
+    description: 'AWS認定DevOpsエンジニア プロフェッショナルの学習用アプリです。',
+    shortName: 'AWS DOP'
+  },
+  'gcp-pca': {
+    title: 'Google Cloud PCA対策クイズ',
+    description: 'Google Cloud Professional Cloud Architectの学習用アプリです。',
+    shortName: 'GCP PCA'
+  },
+  'azure-az305': {
+    title: 'Azure AZ-305対策クイズ',
+    description: 'Microsoft Azure Solutions Architect Expert (AZ-305) の学習用アプリです。',
+    shortName: 'Azure AZ-305'
   }
 };
 
 export function getExamTypeFromSlug(slug: string): ExamType | null {
   // Since slug and examType are the same, just validate
-  if (slug === 'takken' || slug === 'land-surveyor' || slug === 'real-estate-appraiser' || slug === 'rental-property-manager' || slug === 'condominium-manager' || slug === 'web-design-3' || slug === 'go' || slug === 'python' || slug === 'python-data-analysis' || slug === 'statistics-grade2' || slug === 'rest-api' || slug === 'ccna') {
+  if (slug === 'takken' || slug === 'land-surveyor' || slug === 'real-estate-appraiser' || slug === 'rental-property-manager' || slug === 'condominium-manager' || slug === 'web-design-3' || slug === 'go' || slug === 'python' || slug === 'python-data-analysis' || slug === 'statistics-grade2' || slug === 'rest-api' || slug === 'ccna' || slug === 'aws-saa' || slug === 'aws-clf' || slug === 'aws-sap' || slug === 'aws-dop' || slug === 'gcp-pca' || slug === 'azure-az305') {
     return slug as ExamType;
   }
   return null;

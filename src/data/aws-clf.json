@@ -1,0 +1,377 @@
+[
+  {
+    "id": 12001,
+    "examType": "aws-clf",
+    "category": "基本概念",
+    "question": "AWSの従量課金モデルの特徴として正しいものはどれか。",
+    "choices": [
+      "年額固定で支払う",
+      "使った分だけ支払う",
+      "無料枠のみ利用できる",
+      "リソースごとに一律料金"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWSは従量課金で、使用量に応じて料金が発生します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 12002,
+    "examType": "aws-clf",
+    "category": "基本概念",
+    "question": "AWSのグローバルインフラストラクチャを構成する要素はどれか。",
+    "choices": [
+      "リージョンとAZ",
+      "VPCとサブネット",
+      "S3とEBS",
+      "IAMとKMS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWSはリージョンとアベイラビリティゾーンで構成されます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 12003,
+    "examType": "aws-clf",
+    "category": "セキュリティ",
+    "question": "AWSでアクセス制御を行うサービスはどれか。",
+    "choices": [
+      "IAM",
+      "S3",
+      "CloudWatch",
+      "Route 53"
+    ],
+    "correctAnswer": 0,
+    "explanation": "IAMはユーザーや権限を管理するサービスです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 12004,
+    "examType": "aws-clf",
+    "category": "セキュリティ",
+    "question": "AWSのDDoS対策サービスはどれか。",
+    "choices": [
+      "AWS Shield",
+      "AWS WAF",
+      "AWS Config",
+      "AWS Inspector"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS ShieldはDDoS保護を提供します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 12005,
+    "examType": "aws-clf",
+    "category": "コンピューティング",
+    "question": "仮想サーバーを提供するAWSサービスはどれか。",
+    "choices": [
+      "Amazon EC2",
+      "Amazon RDS",
+      "Amazon S3",
+      "Amazon CloudFront"
+    ],
+    "correctAnswer": 0,
+    "explanation": "EC2は仮想サーバーを提供するサービスです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 12006,
+    "examType": "aws-clf",
+    "category": "コンピューティング",
+    "question": "サーバーレスでコードを実行するサービスはどれか。",
+    "choices": [
+      "AWS Lambda",
+      "Amazon EC2",
+      "Amazon ECS",
+      "Amazon EFS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Lambdaはサーバーレスで実行できます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 12007,
+    "examType": "aws-clf",
+    "category": "ストレージ",
+    "question": "オブジェクトストレージを提供するサービスはどれか。",
+    "choices": [
+      "Amazon S3",
+      "Amazon EBS",
+      "Amazon EFS",
+      "Amazon FSx"
+    ],
+    "correctAnswer": 0,
+    "explanation": "S3はオブジェクトストレージです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 12008,
+    "examType": "aws-clf",
+    "category": "ストレージ",
+    "question": "EC2にアタッチするブロックストレージはどれか。",
+    "choices": [
+      "Amazon EBS",
+      "Amazon S3",
+      "Amazon Glacier",
+      "Amazon CloudFront"
+    ],
+    "correctAnswer": 0,
+    "explanation": "EBSはEC2向けのブロックストレージです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 12009,
+    "examType": "aws-clf",
+    "category": "データベース",
+    "question": "フルマネージドのリレーショナルデータベースはどれか。",
+    "choices": [
+      "Amazon RDS",
+      "Amazon DynamoDB",
+      "Amazon S3",
+      "Amazon Redshift"
+    ],
+    "correctAnswer": 0,
+    "explanation": "RDSはマネージドなリレーショナルデータベースです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 12010,
+    "examType": "aws-clf",
+    "category": "データベース",
+    "question": "NoSQLデータベースを提供するサービスはどれか。",
+    "choices": [
+      "Amazon DynamoDB",
+      "Amazon RDS",
+      "Amazon Aurora",
+      "Amazon Redshift"
+    ],
+    "correctAnswer": 0,
+    "explanation": "DynamoDBはフルマネージドのNoSQLデータベースです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 12011,
+    "examType": "aws-clf",
+    "category": "ネットワーキング",
+    "question": "VPC内のサブネットを外部と接続するために必要なものはどれか。",
+    "choices": [
+      "Internet Gateway",
+      "NAT Gateway",
+      "VPC Peering",
+      "Route 53"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Internet GatewayはVPCとインターネットを接続します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 12012,
+    "examType": "aws-clf",
+    "category": "監視",
+    "question": "AWSのメトリクス監視サービスはどれか。",
+    "choices": [
+      "Amazon CloudWatch",
+      "AWS CloudTrail",
+      "AWS Config",
+      "AWS Budgets"
+    ],
+    "correctAnswer": 0,
+    "explanation": "CloudWatchはメトリクスやログの監視を提供します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 12013,
+    "examType": "aws-clf",
+    "category": "監視",
+    "question": "AWSのAPIコール履歴を記録するサービスはどれか。",
+    "choices": [
+      "AWS CloudTrail",
+      "Amazon CloudWatch",
+      "AWS Config",
+      "AWS X-Ray"
+    ],
+    "correctAnswer": 0,
+    "explanation": "CloudTrailはAPIコール履歴を記録します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 12014,
+    "examType": "aws-clf",
+    "category": "コスト管理",
+    "question": "AWSのコスト可視化サービスはどれか。",
+    "choices": [
+      "Cost Explorer",
+      "AWS Config",
+      "AWS Shield",
+      "Amazon Inspector"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cost Explorerでコストの可視化ができます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 12015,
+    "examType": "aws-clf",
+    "category": "コスト管理",
+    "question": "予算アラートを設定できるサービスはどれか。",
+    "choices": [
+      "AWS Budgets",
+      "AWS Config",
+      "AWS CloudTrail",
+      "AWS Shield"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Budgetsは予算とアラートを設定できます。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 12016,
+    "examType": "aws-clf",
+    "category": "サポート",
+    "question": "AWSサポートプランで最も範囲が広いものはどれか。",
+    "choices": [
+      "Basic",
+      "Developer",
+      "Business",
+      "Enterprise"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Enterpriseプランが最も包括的なサポートです。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 12017,
+    "examType": "aws-clf",
+    "category": "可用性",
+    "question": "高可用性のために推奨される配置はどれか。",
+    "choices": [
+      "単一AZ",
+      "マルチAZ",
+      "単一リージョン単一AZ",
+      "単一サブネット"
+    ],
+    "correctAnswer": 1,
+    "explanation": "複数AZに配置することで高可用性を実現します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 12018,
+    "examType": "aws-clf",
+    "category": "可用性",
+    "question": "災害対策（DR）として最も低コストな戦略はどれか。",
+    "choices": [
+      "バックアップ＆リストア",
+      "ウォームスタンバイ",
+      "マルチサイト",
+      "アクティブ-アクティブ"
+    ],
+    "correctAnswer": 0,
+    "explanation": "バックアップ＆リストアは低コストなDR戦略です。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 12019,
+    "examType": "aws-clf",
+    "category": "アーキテクチャ",
+    "question": "SQSはどのタイプのサービスか。",
+    "choices": [
+      "メッセージキュー",
+      "データベース",
+      "ストレージ",
+      "DNS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "SQSはマネージドなメッセージキューサービスです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 12020,
+    "examType": "aws-clf",
+    "category": "アーキテクチャ",
+    "question": "SNSはどのタイプのサービスか。",
+    "choices": [
+      "通知サービス",
+      "ログ監視",
+      "データベース",
+      "コンテナ実行"
+    ],
+    "correctAnswer": 0,
+    "explanation": "SNSは通知やPub/Subを提供します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 12021,
+    "examType": "aws-clf",
+    "category": "セキュリティ",
+    "question": "暗号化キー管理サービスはどれか。",
+    "choices": [
+      "AWS KMS",
+      "AWS WAF",
+      "AWS Shield",
+      "AWS Trusted Advisor"
+    ],
+    "correctAnswer": 0,
+    "explanation": "KMSは暗号化キーを管理します。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 12022,
+    "examType": "aws-clf",
+    "category": "セキュリティ",
+    "question": "S3バケットへのアクセスを制御するための機能はどれか。",
+    "choices": [
+      "バケットポリシー",
+      "VPCルートテーブル",
+      "NACL",
+      "セキュリティグループ"
+    ],
+    "correctAnswer": 0,
+    "explanation": "S3バケットポリシーでアクセス制御ができます。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 12023,
+    "examType": "aws-clf",
+    "category": "ストレージ",
+    "question": "S3の整合性モデルとして正しいものはどれか。",
+    "choices": [
+      "結果整合性のみ",
+      "読み取り後の書き込みは結果整合性",
+      "強い整合性",
+      "整合性は保証されない"
+    ],
+    "correctAnswer": 2,
+    "explanation": "S3は強い整合性を提供します。",
+    "difficulty": "exam"
+  },
+  {
+    "id": 12024,
+    "examType": "aws-clf",
+    "category": "ネットワーキング",
+    "question": "グローバルなDNSサービスはどれか。",
+    "choices": [
+      "Amazon Route 53",
+      "Amazon CloudFront",
+      "AWS Direct Connect",
+      "Amazon VPC"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Route 53はDNSサービスです。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 12025,
+    "examType": "aws-clf",
+    "category": "コスト管理",
+    "question": "請求をアカウント間で一元管理する機能はどれか。",
+    "choices": [
+      "Organizationsの一括請求",
+      "AWS Budgets",
+      "Cost Explorer",
+      "AWS Marketplace"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Organizationsの一括請求で複数アカウントの請求を統合できます。",
+    "difficulty": "exam"
+  }
+]

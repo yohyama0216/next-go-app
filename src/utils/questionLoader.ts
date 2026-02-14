@@ -13,6 +13,12 @@ import pythonDataAnalysisQuestions from '@/data/python-data-analysis.json';
 import statisticsGrade2Questions from '@/data/statistics-grade2.json';
 import restApiQuestions from '@/data/rest-api.json';
 import ccnaQuestions from '@/data/ccna.json';
+import awsSaaQuestions from '@/data/aws-saa.json';
+import awsClfQuestions from '@/data/aws-clf.json';
+import awsSapQuestions from '@/data/aws-sap.json';
+import awsDopQuestions from '@/data/aws-dop.json';
+import gcpPcaQuestions from '@/data/gcp-pca.json';
+import azureAz305Questions from '@/data/azure-az305.json';
 
 // Map of exam types to their questions
 const questionsMap: Record<ExamType, Question[]> = {
@@ -28,6 +34,12 @@ const questionsMap: Record<ExamType, Question[]> = {
   'statistics-grade2': statisticsGrade2Questions as Question[],
   'rest-api': restApiQuestions as Question[],
   'ccna': ccnaQuestions as Question[],
+  'aws-saa': awsSaaQuestions as Question[],
+  'aws-clf': awsClfQuestions as Question[],
+  'aws-sap': awsSapQuestions as Question[],
+  'aws-dop': awsDopQuestions as Question[],
+  'gcp-pca': gcpPcaQuestions as Question[],
+  'azure-az305': azureAz305Questions as Question[],
 };
 
 /**
